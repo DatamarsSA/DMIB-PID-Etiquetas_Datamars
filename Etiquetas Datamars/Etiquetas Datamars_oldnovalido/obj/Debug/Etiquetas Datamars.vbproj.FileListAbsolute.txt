@@ -1,0 +1,29 @@
+G:\Documentos\Programas FELIXCAN\Microchip\SALA DE LECTURA\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe.config
+G:\Documentos\Programas FELIXCAN\Microchip\SALA DE LECTURA\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe
+G:\Documentos\Programas FELIXCAN\Microchip\SALA DE LECTURA\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.pdb
+G:\Documentos\Programas FELIXCAN\Microchip\SALA DE LECTURA\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.xml
+G:\Documentos\Programas FELIXCAN\Microchip\SALA DE LECTURA\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbprojResolveAssemblyReference.cache
+G:\Documentos\Programas FELIXCAN\Microchip\SALA DE LECTURA\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Interop.BarTender.dll
+G:\Documentos\Programas FELIXCAN\Microchip\SALA DE LECTURA\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.ResolveComReference.cache
+G:\Documentos\Programas FELIXCAN\Microchip\SALA DE LECTURA\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Form1.resources
+G:\Documentos\Programas FELIXCAN\Microchip\SALA DE LECTURA\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Resources.resources
+G:\Documentos\Programas FELIXCAN\Microchip\SALA DE LECTURA\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.GenerateResource.Cache
+G:\Documentos\Programas FELIXCAN\Microchip\SALA DE LECTURA\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.exe
+G:\Documentos\Programas FELIXCAN\Microchip\SALA DE LECTURA\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.xml
+G:\Documentos\Programas FELIXCAN\Microchip\SALA DE LECTURA\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.pdb
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbprojResolveAssemblyReference.cache
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.ResolveComReference.cache
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Form1.resources
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Resources.resources
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.GenerateResource.Cache
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.exe
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.xml
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.pdb
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Interop.BarTender.dll
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe.config
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.pdb
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.xml
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.frmUsuarios.resources
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Usuario.resources
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\GetDomain.dll

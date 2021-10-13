@@ -1,0 +1,62 @@
+ Public Sub impEtiBoxend(numorder As Long, numQta As Integer, _date As Date, _Time As Date, numbox As Integer, product As String)
+        Dim sTemp, sData, sRiga1, sRiga2, sRiga3, sRiga4, sQuantita, sDatilav, barcode As String
+        Dim byNumriga As Byte
+        byNumriga = 1
+        sQuantita = numQta
+        sDatilav = numorder & "   " & product '& numbox & "-"
+        sData = Format(_date, "dd.MM.yyy") & " : " & Format(_Time, "HH:MM")
+        'Lo de esta variable es lo que se tiene que registrar en la BD
+        barcode = "PO_" & numorder & "_SB" & numbox
+        sRiga1 = "Box Number: " & numbox
+        sRiga2 = "Quantity: " & numQta
+        sRiga3 = "Date: " & sData
+        sRiga4 = "Quantity" & " " & " Order " & " " & "Product"
+
+        sTemp = ""
+        sTemp = sTemp & "^XA"          'Start Label
+        sTemp = sTemp & "^MMC"         'Label Cut at Finish
+        sTemp = sTemp & "^PQ" & 1     'Quantity label print
+        sTemp = sTemp & "," & 2 & ",O,Y"  'Cut after label numbers(global variable bynumetichette
+        '----------------------Label Part 1
+        sTemp = sTemp & "^FO15,40"        ' line1, Origine X,Y in dots '0
+        sTemp = sTemp & "^AB,,13,^FD" & sRiga1 & "^FS"
+        sTemp = sTemp & "^FO15,80"       ' line2, Origine X,Y in dots '40
+        sTemp = sTemp & "^AB,,13,^FD" & sRiga2 & "^FS"
+        sTemp = sTemp & "^FO15,110"      ' line3, Origine X,Y in dots '80
+        sTemp = sTemp & "^AB,,13,^FD" & sRiga3 & "^FS"
+        sTemp = sTemp & "^FO15,160"      ' line4, Origine X,Y in dots '120
+        sTemp = sTemp & "^AB,,13,^FD" & sRiga4 & "^FS"
+        '----------------------Label Part 2
+        'sTemp = sTemp & "^FO0,440"
+        'sTemp = sTemp & "^AB,,13,^FD" & "------------------------------" & "^FS"
+        'sTemp = sTemp & "^FO0,480"      ' Line 1, Origine X,Y in dots
+        'sTemp = sTemp & "^AB,,13,^FD" & sRiga1 & "^FS"
+        'sTemp = sTemp & "^FO0,520"      ' Line 2, Origine X,Y in dots
+        'sTemp = sTemp & "^AB,,13,^FD" & sRiga2 & "^FS"
+        'sTemp = sTemp & "^FO0,560"      ' Line 3, Origine X,Y in dots
+        'sTemp = sTemp & "^AB,,13,^FD" & sRiga3 & "^FS"
+        'sTemp = sTemp & "^FO0,600"      ' Line 4, Origine X,Y in dots
+        'sTemp = sTemp & "^AB,,13,^FD" & sRiga4 & "^FS"
+
+        '---------------------------Label Part 1
+        sTemp = sTemp & "^FO15," & byNumriga * 70 + 120      'Quantity, Origine X,Y in dots '30
+        sTemp = sTemp & "^AB,,13,^FD" & "Lav." & sQuantita & "^FS"
+        sTemp = sTemp & "^FO165," & byNumriga * 70 + 120    'Works, Origine X,Y in dots 'en origen FO220 '30
+        sTemp = sTemp & "^AB,,13,^FD" & sDatilav & "^FS"
+        'Barcode
+        sTemp = sTemp & "^FO15,250,^BY2"
+        sTemp = sTemp & "^BCN,60,N,N"
+        sTemp = sTemp & "^FD" & barcode & "^FS"
+        sTemp = sTemp & "^FO15,320"
+        sTemp = sTemp & "^AB,,16,^FD" & barcode & "^FS"
+
+        ''---------------------------Label Part 2
+        'sTemp = sTemp & "^FO0," & byNumriga * 70 + 600      'Quantity, Origine x,y in dots
+        'sTemp = sTemp & "^AB,,13,^FD" & "Lav." & sQuantita & "^FS"
+        'sTemp = sTemp & "^FO165," & byNumriga * 70 + 600    'Works, Origine x,y in dots 'en origen FO220
+        'sTemp = sTemp & "^AB,,13,^FD" & sDatilav & "^FS"
+
+        sTemp = sTemp & "^XZ"            'Label Finish
+        RawPrinterHelper.SendStringToPrinter(cartPrinter, sTemp)
+
+    End Sub

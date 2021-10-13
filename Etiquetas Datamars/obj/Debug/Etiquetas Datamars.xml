@@ -1,0 +1,406 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Etiquetas Datamars
+</name>
+</assembly>
+<members>
+<member name="T:Etiquetas_Datamars.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Etiquetas_Datamars.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Etiquetas_Datamars.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Etiquetas_Datamars.My.Resources.Resources._6mm_Datamars_Color_RGB">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Etiquetas_Datamars.My.Resources.Resources.icoUser120">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Etiquetas_Datamars.My.Resources.Resources.icoUser120B">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Etiquetas_Datamars.My.Resources.Resources.icoUser120BB">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Etiquetas_Datamars.My.Resources.Resources.icoUser120BBB">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Etiquetas_Datamars.My.Resources.Resources.logo_datamars_color">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.OrdenesGrabacionDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.CodigosPaisesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.conPedidosRefSapDesartDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.HistImpEtiqDMDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.uspBuscarPedidoHistoricoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.uspBuscarUsuariosEtiquetasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.OrdenesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.EMB_ChipsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.EMB_ArreglosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.PedidosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.HistImpEtiqDM1DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.EMB_Chips1DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.EMB_Arreglos1DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.bloqueoEtiDMDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.uspGetIdSobrantesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.OrdenesGrabacionRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.CodigosPaisesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.conPedidosRefSapDesartRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.HistImpEtiqDMRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.uspBuscarPedidoHistoricoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.uspBuscarUsuariosEtiquetasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.OrdenesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.EMB_ChipsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.EMB_ArreglosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.PedidosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.HistImpEtiqDM1Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.EMB_Chips1Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.EMB_Arreglos1Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.bloqueoEtiDMRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.uspGetIdSobrantesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.OrdenesGrabacionRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.CodigosPaisesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.conPedidosRefSapDesartRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.HistImpEtiqDMRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.uspBuscarPedidoHistoricoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.uspBuscarUsuariosEtiquetasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.OrdenesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.EMB_ChipsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.EMB_ArreglosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.PedidosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.HistImpEtiqDM1RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.EMB_Chips1RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.EMB_Arreglos1RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.bloqueoEtiDMRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.uspGetIdSobrantesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1TableAdapters.OrdenesGrabacionTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1TableAdapters.CodigosPaisesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1TableAdapters.conPedidosRefSapDesartTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1TableAdapters.HistImpEtiqDMTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1TableAdapters.uspBuscarPedidoHistoricoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1TableAdapters.uspBuscarUsuariosEtiquetasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1TableAdapters.OrdenesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1TableAdapters.EMB_ChipsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1TableAdapters.EMB_ArreglosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1TableAdapters.PedidosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1TableAdapters.HistImpEtiqDM1TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1TableAdapters.EMB_Chips1TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1TableAdapters.EMB_Arreglos1TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1TableAdapters.bloqueoEtiDMTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1TableAdapters.uspGetIdSobrantesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1TableAdapters.qryInsertHistorico">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Etiquetas_Datamars.DataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(Etiquetas_Datamars.DataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Etiquetas_Datamars.DataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(Etiquetas_Datamars.DataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Etiquetas_Datamars.DataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(Etiquetas_Datamars.DataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Etiquetas_Datamars.DataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Etiquetas_Datamars.DataSet1TableAdapters.TableAdapterManager.UpdateAll(Etiquetas_Datamars.DataSet1)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

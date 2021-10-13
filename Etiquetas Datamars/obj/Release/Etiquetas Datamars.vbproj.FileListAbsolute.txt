@@ -1,0 +1,8 @@
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\obj\Release\Etiquetas Datamars.vbprojResolveAssemblyReference.cache
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\obj\Release\Interop.BarTender.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\obj\Release\Etiquetas Datamars.vbproj.ResolveComReference.cache
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\obj\Release\Etiquetas_Datamars.Form1.resources
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\obj\Release\Etiquetas_Datamars.frmUsuarios.resources
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\obj\Release\Etiquetas_Datamars.Resources.resources
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\obj\Release\Etiquetas_Datamars.Usuario.resources
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\obj\Release\Etiquetas Datamars.vbproj.GenerateResource.Cache

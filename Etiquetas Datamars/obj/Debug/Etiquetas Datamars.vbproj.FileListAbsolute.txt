@@ -1,0 +1,447 @@
+G:\Documentos\Programas FELIXCAN\Microchip\SALA DE LECTURA\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe.config
+G:\Documentos\Programas FELIXCAN\Microchip\SALA DE LECTURA\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe
+G:\Documentos\Programas FELIXCAN\Microchip\SALA DE LECTURA\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.pdb
+G:\Documentos\Programas FELIXCAN\Microchip\SALA DE LECTURA\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.xml
+G:\Documentos\Programas FELIXCAN\Microchip\SALA DE LECTURA\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbprojResolveAssemblyReference.cache
+G:\Documentos\Programas FELIXCAN\Microchip\SALA DE LECTURA\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Interop.BarTender.dll
+G:\Documentos\Programas FELIXCAN\Microchip\SALA DE LECTURA\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.ResolveComReference.cache
+G:\Documentos\Programas FELIXCAN\Microchip\SALA DE LECTURA\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Form1.resources
+G:\Documentos\Programas FELIXCAN\Microchip\SALA DE LECTURA\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Resources.resources
+G:\Documentos\Programas FELIXCAN\Microchip\SALA DE LECTURA\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.GenerateResource.Cache
+G:\Documentos\Programas FELIXCAN\Microchip\SALA DE LECTURA\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.exe
+G:\Documentos\Programas FELIXCAN\Microchip\SALA DE LECTURA\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.xml
+G:\Documentos\Programas FELIXCAN\Microchip\SALA DE LECTURA\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.pdb
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbprojResolveAssemblyReference.cache
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.ResolveComReference.cache
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Form1.resources
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Resources.resources
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.GenerateResource.Cache
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.exe
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.xml
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.pdb
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Interop.BarTender.dll
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe.config
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.pdb
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.xml
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.frmUsuarios.resources
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Usuario.resources
+C:\Compartida_Ezequiel\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\GetDomain.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe.config
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.pdb
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.xml
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbprojResolveAssemblyReference.cache
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Interop.BarTender.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.ResolveComReference.cache
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Form1.resources
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.frmUsuarios.resources
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Resources.resources
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Usuario.resources
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.GenerateResource.Cache
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.exe
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.xml
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.pdb
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\zh-HANS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\zh-HANT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\zh-HANS\Microsoft.ReportViewer.Common.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\zh-HANT\Microsoft.ReportViewer.Common.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\zh-HANS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Compartida_Ezequiel\programas_VB_NET\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\zh-HANT\Microsoft.ReportViewer.DataVisualization.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe.config
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.pdb
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.xml
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Microsoft.ReportViewer.Common.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\zh-HANS\Microsoft.ReportViewer.WinForms.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\zh-HANT\Microsoft.ReportViewer.WinForms.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\zh-HANS\Microsoft.ReportViewer.Common.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\zh-HANT\Microsoft.ReportViewer.Common.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\zh-HANS\Microsoft.ReportViewer.DataVisualization.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\zh-HANT\Microsoft.ReportViewer.DataVisualization.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Interop.BarTender.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.ResolveComReference.cache
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Form1.resources
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.frmUsuarios.resources
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Resources.resources
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Usuario.resources
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.GenerateResource.Cache
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.exe
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.xml
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.pdb
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbprojAssemblyReference.cache
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.CoreCompileInputs.cache
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.CopyComplete
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe.config
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.pdb
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.xml
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\Microsoft.ReportViewer.Common.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\zh-HANS\Microsoft.ReportViewer.WinForms.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\zh-HANT\Microsoft.ReportViewer.WinForms.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\zh-HANS\Microsoft.ReportViewer.Common.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\zh-HANT\Microsoft.ReportViewer.Common.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\zh-HANS\Microsoft.ReportViewer.DataVisualization.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\zh-HANT\Microsoft.ReportViewer.DataVisualization.resources.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbprojAssemblyReference.cache
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\obj\Debug\Interop.BarTender.dll
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.ResolveComReference.cache
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Form1.resources
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.frmUsuarios.resources
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Resources.resources
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Usuario.resources
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.GenerateResource.cache
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.CoreCompileInputs.cache
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.CopyComplete
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.exe
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.xml
+\\srvchip4\SB\ejecutables\Etiquetas Datamars_less_old\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.pdb
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe.config
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.pdb
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.xml
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\zh-HANS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\zh-HANT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\zh-HANS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\zh-HANT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\zh-HANS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\bin\Debug\zh-HANT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbprojAssemblyReference.cache
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\obj\Debug\Interop.BarTender.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.ResolveComReference.cache
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Form1.resources
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.frmUsuarios.resources
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.ImprimirSobrantes.resources
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Resources.resources
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Usuario.resources
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.GenerateResource.cache
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.CoreCompileInputs.cache
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.CopyComplete
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.exe
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.xml
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Versiones Antiguas\Etiquetas Datamars_less_old\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.pdb
+\\srvchip4\SB\ejecutables\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.ImprimirSobrantes.resources
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbprojAssemblyReference.cache
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Interop.BarTender.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.ResolveComReference.cache
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Form1.resources
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.frmUsuarios.resources
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.ImprimirSobrantes.resources
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Resources.resources
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Usuario.resources
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.GenerateResource.cache
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.CoreCompileInputs.cache
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.exe
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.xml
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.pdb
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe.config
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.pdb
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.xml
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.CopyComplete
+E:\Users\pablo\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbprojAssemblyReference.cache
+E:\Users\pablo\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.ResolveComReference.cache
+E:\Users\pablo\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Form1.resources
+E:\Users\pablo\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.frmUsuarios.resources
+E:\Users\pablo\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.ImprimirSobrantes.resources
+E:\Users\pablo\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Resources.resources
+E:\Users\pablo\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Usuario.resources
+E:\Users\pablo\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.GenerateResource.cache
+E:\Users\pablo\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.exe
+E:\Users\pablo\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.xml
+E:\Users\pablo\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.pdb
+D:\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All (6)\Etiquetas Datamars (2)\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe.config
+D:\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All (6)\Etiquetas Datamars (2)\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Interop.BarTender.dll
+D:\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All (6)\Etiquetas Datamars (2)\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.ResolveComReference.cache
+D:\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All (6)\Etiquetas Datamars (2)\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.exe
+D:\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All (6)\Etiquetas Datamars (2)\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.xml
+D:\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All (6)\Etiquetas Datamars (2)\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.pdb
+D:\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All (6)\Etiquetas Datamars (2)\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Form1.resources
+D:\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All (6)\Etiquetas Datamars (2)\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.frmUsuarios.resources
+D:\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All (6)\Etiquetas Datamars (2)\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.ImprimirSobrantes.resources
+D:\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All (6)\Etiquetas Datamars (2)\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Resources.resources
+D:\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All (6)\Etiquetas Datamars (2)\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Usuario.resources
+D:\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All (6)\Etiquetas Datamars (2)\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.GenerateResource.Cache
+D:\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All (6)\Etiquetas Datamars (2)\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe
+D:\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All (6)\Etiquetas Datamars (2)\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.pdb
+D:\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All (6)\Etiquetas Datamars (2)\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.xml
+D:\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All (6)\Etiquetas Datamars (2)\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All (6)\Etiquetas Datamars (2)\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All (6)\Etiquetas Datamars (2)\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All (6)\Etiquetas Datamars (2)\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+D:\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All (6)\Etiquetas Datamars (2)\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+D:\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All (6)\Etiquetas Datamars (2)\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+D:\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All (6)\Etiquetas Datamars (2)\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+D:\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All (6)\Etiquetas Datamars (2)\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+D:\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All (6)\Etiquetas Datamars (2)\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+D:\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All (6)\Etiquetas Datamars (2)\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+D:\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All (6)\Etiquetas Datamars (2)\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+D:\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All (6)\Etiquetas Datamars (2)\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All (6)\Etiquetas Datamars (2)\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All (6)\Etiquetas Datamars (2)\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbprojResolveAssemblyReference.cache
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe.config
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.pdb
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.xml
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbprojAssemblyReference.cache
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Interop.BarTender.dll
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.ResolveComReference.cache
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Form1.resources
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.frmUsuarios.resources
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.ImprimirSobrantes.resources
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Resources.resources
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Usuario.resources
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.GenerateResource.cache
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.CoreCompileInputs.cache
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.CopyComplete
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.exe
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.xml
+C:\Users\pablo.polidura\OneDrive - Datamars SA\Programacion VB.NET\Calle K\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.pdb
+C:\Users\pablo\Desktop\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe.config
+C:\Users\pablo\Desktop\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Interop.BarTender.dll
+C:\Users\pablo\Desktop\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.ResolveComReference.cache
+C:\Users\pablo\Desktop\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.exe
+C:\Users\pablo\Desktop\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.xml
+C:\Users\pablo\Desktop\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.pdb
+C:\Users\pablo\Desktop\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe
+C:\Users\pablo\Desktop\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.pdb
+C:\Users\pablo\Desktop\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.xml
+C:\Users\pablo\Desktop\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\pablo\Desktop\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\pablo\Desktop\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\pablo\Desktop\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\pablo\Desktop\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\pablo\Desktop\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\pablo\Desktop\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\pablo\Desktop\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\pablo\Desktop\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\pablo\Desktop\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\pablo\Desktop\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\pablo\Desktop\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\pablo\Desktop\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\pablo\Desktop\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbprojResolveAssemblyReference.cache
+C:\Users\pablo\Desktop\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Form1.resources
+C:\Users\pablo\Desktop\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.frmUsuarios.resources
+C:\Users\pablo\Desktop\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.ImprimirSobrantes.resources
+C:\Users\pablo\Desktop\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Resources.resources
+C:\Users\pablo\Desktop\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Usuario.resources
+C:\Users\pablo\Desktop\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.GenerateResource.Cache
+C:\Users\acorr\Downloads\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe.config
+C:\Users\acorr\Downloads\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe
+C:\Users\acorr\Downloads\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.pdb
+C:\Users\acorr\Downloads\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.xml
+C:\Users\acorr\Downloads\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\acorr\Downloads\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbprojResolveAssemblyReference.cache
+C:\Users\acorr\Downloads\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Interop.BarTender.dll
+C:\Users\acorr\Downloads\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.ResolveComReference.cache
+C:\Users\acorr\Downloads\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Form1.resources
+C:\Users\acorr\Downloads\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.frmUsuarios.resources
+C:\Users\acorr\Downloads\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.ImprimirSobrantes.resources
+C:\Users\acorr\Downloads\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Resources.resources
+C:\Users\acorr\Downloads\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Usuario.resources
+C:\Users\acorr\Downloads\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.GenerateResource.Cache
+C:\Users\acorr\Downloads\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.exe
+C:\Users\acorr\Downloads\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.xml
+C:\Users\acorr\Downloads\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.pdb
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe.config
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Interop.BarTender.dll
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.ResolveComReference.cache
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.exe
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.xml
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.pdb
+C:\Users\acorr\Desktop\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe.config
+C:\Users\acorr\Desktop\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Interop.BarTender.dll
+C:\Users\acorr\Desktop\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.ResolveComReference.cache
+C:\Users\acorr\Desktop\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.exe
+C:\Users\acorr\Desktop\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.xml
+C:\Users\acorr\Desktop\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.pdb
+C:\Users\acorr\Desktop\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe
+C:\Users\acorr\Desktop\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.pdb
+C:\Users\acorr\Desktop\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.xml
+C:\Users\acorr\Desktop\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\acorr\Desktop\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbprojResolveAssemblyReference.cache
+C:\Users\acorr\Desktop\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Form1.resources
+C:\Users\acorr\Desktop\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.frmUsuarios.resources
+C:\Users\acorr\Desktop\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.ImprimirSobrantes.resources
+C:\Users\acorr\Desktop\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Resources.resources
+C:\Users\acorr\Desktop\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Usuario.resources
+C:\Users\acorr\Desktop\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.GenerateResource.Cache
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe.config
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Interop.BarTender.dll
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.ResolveComReference.cache
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.exe
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.xml
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.pdb
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.pdb
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.xml
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbprojResolveAssemblyReference.cache
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Form1.resources
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.frmUsuarios.resources
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.ImprimirSobrantes.resources
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Resources.resources
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Usuario.resources
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.GenerateResource.Cache
+C:\Users\pablo\Desktop\Etiquetas Datamars 2021\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe.config
+C:\Users\pablo\Desktop\Etiquetas Datamars 2021\Etiquetas Datamars\obj\Debug\Interop.BarTender.dll
+C:\Users\pablo\Desktop\Etiquetas Datamars 2021\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.ResolveComReference.cache
+C:\Users\pablo\Desktop\Etiquetas Datamars 2021\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.exe
+C:\Users\pablo\Desktop\Etiquetas Datamars 2021\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.xml
+C:\Users\pablo\Desktop\Etiquetas Datamars 2021\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.pdb
+C:\Users\pablo\Desktop\Etiquetas Datamars 2021\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe
+C:\Users\pablo\Desktop\Etiquetas Datamars 2021\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.pdb
+C:\Users\pablo\Desktop\Etiquetas Datamars 2021\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.xml
+C:\Users\pablo\Desktop\Etiquetas Datamars 2021\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbprojResolveAssemblyReference.cache
+C:\Users\pablo\Desktop\Etiquetas Datamars 2021\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Form1.resources
+C:\Users\pablo\Desktop\Etiquetas Datamars 2021\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.frmUsuarios.resources
+C:\Users\pablo\Desktop\Etiquetas Datamars 2021\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.ImprimirSobrantes.resources
+C:\Users\pablo\Desktop\Etiquetas Datamars 2021\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Resources.resources
+C:\Users\pablo\Desktop\Etiquetas Datamars 2021\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Usuario.resources
+C:\Users\pablo\Desktop\Etiquetas Datamars 2021\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.GenerateResource.Cache
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars 2021\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe.config
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars 2021\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars 2021\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.pdb
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars 2021\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.xml
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars 2021\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbprojResolveAssemblyReference.cache
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars 2021\Etiquetas Datamars\obj\Debug\Interop.BarTender.dll
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars 2021\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.ResolveComReference.cache
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars 2021\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Form1.resources
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars 2021\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.frmUsuarios.resources
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars 2021\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.ImprimirSobrantes.resources
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars 2021\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Resources.resources
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars 2021\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Usuario.resources
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars 2021\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.GenerateResource.Cache
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars 2021\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.exe
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars 2021\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.xml
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars 2021\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.pdb
