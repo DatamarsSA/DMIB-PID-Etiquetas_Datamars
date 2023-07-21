@@ -2,7 +2,7 @@
 <xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
-      <DataSource DefaultConnectionIndex="6" FunctionsComponentName="qryInsertHistorico" GeneratorFunctionsComponentClassName="qryInsertHistorico" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="qryInsertHistorico" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="7" FunctionsComponentName="qryInsertHistorico" GeneratorFunctionsComponentClassName="qryInsertHistorico" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="qryInsertHistorico" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
           <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="PartesMicrochipConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PartesMicrochipConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Etiquetas_Datamars.My.MySettings.GlobalReference.Default.PartesMicrochipConnectionString" Provider="System.Data.SqlClient" />
           <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="MicrochipsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MicrochipsConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Etiquetas_Datamars.My.MySettings.GlobalReference.Default.MicrochipsConnectionString" Provider="System.Data.SqlClient" />
@@ -11,6 +11,7 @@
           <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="grab_genericaSQLConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="grab_genericaSQLConnectionString1 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Etiquetas_Datamars.My.MySettings.GlobalReference.Default.grab_genericaSQLConnectionString1" Provider="System.Data.SqlClient" />
           <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="PartesMicrochipConnectionStringSRV3" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PartesMicrochipConnectionStringSRV3 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Etiquetas_Datamars.My.MySettings.GlobalReference.Default.PartesMicrochipConnectionStringSRV3" Provider="System.Data.SqlClient" />
           <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="PID_QueueConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PID_QueueConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Etiquetas_Datamars.My.MySettings.GlobalReference.Default.PID_QueueConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="PID_QueueConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PID_QueueConnectionString1 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Etiquetas_Datamars.My.MySettings.GlobalReference.Default.PID_QueueConnectionString1" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OrdenesGrabacionTableAdapter" GeneratorDataComponentClassName="OrdenesGrabacionTableAdapter" Name="OrdenesGrabacion" UserDataComponentName="OrdenesGrabacionTableAdapter">
@@ -682,7 +683,7 @@ WHERE        (id = @id)</CommandText>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="uspGetIdSobrantesTableAdapter" GeneratorDataComponentClassName="uspGetIdSobrantesTableAdapter" Name="uspGetIdSobrantes" UserDataComponentName="uspGetIdSobrantesTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="PID_QueueConnectionString (MySettings)" DbObjectName="PID_Queue.dbo.uspGetIdSobrantes" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="PID_QueueConnectionString1 (MySettings)" DbObjectName="PID_Queue.dbo.uspGetIdSobrantes" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.uspGetIdSobrantes</CommandText>
@@ -696,6 +697,70 @@ WHERE        (id = @id)</CommandText>
             </MainSource>
             <Mappings>
               <Mapping SourceColumn="workOrderID" DataSetColumn="workOrderID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="assignmentsTableAdapter" GeneratorDataComponentClassName="assignmentsTableAdapter" Name="assignments" UserDataComponentName="assignmentsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PID_QueueConnectionString1 (MySettings)" DbObjectName="PID_Queue.dbo.assignments" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [assignments] WHERE (([id] = @Original_id) AND ((@IsNull_bacthID = 1 AND [bacthID] IS NULL) OR ([bacthID] = @Original_bacthID)) AND ((@IsNull_workOrderID = 1 AND [workOrderID] IS NULL) OR ([workOrderID] = @Original_workOrderID)) AND ((@IsNull_timestamp = 1 AND [timestamp] IS NULL) OR ([timestamp] = @Original_timestamp)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_bacthID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="bacthID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_bacthID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="bacthID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_workOrderID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="workOrderID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_workOrderID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="workOrderID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_timestamp" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="timestamp" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_timestamp" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="timestamp" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [assignments] ([bacthID], [workOrderID], [timestamp]) VALUES (@bacthID, @workOrderID, @timestamp);
+SELECT id, bacthID, workOrderID, timestamp FROM assignments WHERE (id = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@bacthID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="bacthID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@workOrderID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="workOrderID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@timestamp" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="timestamp" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        assignments.*
+FROM            assignments</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [assignments] SET [bacthID] = @bacthID, [workOrderID] = @workOrderID, [timestamp] = @timestamp WHERE (([id] = @Original_id) AND ((@IsNull_bacthID = 1 AND [bacthID] IS NULL) OR ([bacthID] = @Original_bacthID)) AND ((@IsNull_workOrderID = 1 AND [workOrderID] IS NULL) OR ([workOrderID] = @Original_workOrderID)) AND ((@IsNull_timestamp = 1 AND [timestamp] IS NULL) OR ([timestamp] = @Original_timestamp)));
+SELECT id, bacthID, workOrderID, timestamp FROM assignments WHERE (id = @id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@bacthID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="bacthID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@workOrderID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="workOrderID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@timestamp" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="timestamp" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_bacthID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="bacthID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_bacthID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="bacthID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_workOrderID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="workOrderID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_workOrderID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="workOrderID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_timestamp" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="timestamp" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_timestamp" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="timestamp" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="id" ColumnName="id" DataSourceName="PID_Queue.dbo.assignments" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@id" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+              <Mapping SourceColumn="bacthID" DataSetColumn="bacthID" />
+              <Mapping SourceColumn="workOrderID" DataSetColumn="workOrderID" />
+              <Mapping SourceColumn="timestamp" DataSetColumn="timestamp" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -920,7 +985,7 @@ WHERE Ref = @Referencia</CommandText>
               <xs:element name="refProducto" msprop:Generator_ColumnVarNameInTable="columnrefProducto" msprop:Generator_ColumnPropNameInRow="refProducto" msprop:Generator_ColumnPropNameInTable="refProductoColumn" msprop:Generator_UserColumnName="refProducto" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
-                    <xs:maxLength value="20" />
+                    <xs:maxLength value="60" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
@@ -957,7 +1022,7 @@ WHERE Ref = @Referencia</CommandText>
               <xs:element name="RefCliente" msprop:Generator_ColumnVarNameInTable="columnRefCliente" msprop:Generator_ColumnPropNameInRow="RefCliente" msprop:Generator_ColumnPropNameInTable="RefClienteColumn" msprop:Generator_UserColumnName="RefCliente" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
-                    <xs:maxLength value="23" />
+                    <xs:maxLength value="60" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
@@ -1186,6 +1251,16 @@ WHERE Ref = @Referencia</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="assignments" msprop:Generator_TableClassName="assignmentsDataTable" msprop:Generator_TableVarName="tableassignments" msprop:Generator_TablePropName="assignments" msprop:Generator_RowDeletingName="assignmentsRowDeleting" msprop:Generator_RowChangingName="assignmentsRowChanging" msprop:Generator_RowEvHandlerName="assignmentsRowChangeEventHandler" msprop:Generator_RowDeletedName="assignmentsRowDeleted" msprop:Generator_UserTableName="assignments" msprop:Generator_RowChangedName="assignmentsRowChanged" msprop:Generator_RowEvArgName="assignmentsRowChangeEvent" msprop:Generator_RowClassName="assignmentsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="bacthID" msprop:Generator_ColumnVarNameInTable="columnbacthID" msprop:Generator_ColumnPropNameInRow="bacthID" msprop:Generator_ColumnPropNameInTable="bacthIDColumn" msprop:Generator_UserColumnName="bacthID" type="xs:int" minOccurs="0" />
+              <xs:element name="workOrderID" msprop:Generator_ColumnVarNameInTable="columnworkOrderID" msprop:Generator_ColumnPropNameInRow="workOrderID" msprop:Generator_ColumnPropNameInTable="workOrderIDColumn" msprop:Generator_UserColumnName="workOrderID" type="xs:int" minOccurs="0" />
+              <xs:element name="timestamp" msprop:Generator_ColumnVarNameInTable="columntimestamp" msprop:Generator_ColumnPropNameInRow="timestamp" msprop:Generator_ColumnPropNameInTable="timestampColumn" msprop:Generator_UserColumnName="timestamp" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
@@ -1231,6 +1306,10 @@ WHERE Ref = @Referencia</CommandText>
     <xs:unique name="EMB_Arreglos1_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:EMB_Arreglos1" />
       <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="assignments_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:assignments" />
+      <xs:field xpath="mstns:id" />
     </xs:unique>
   </xs:element>
 </xs:schema>

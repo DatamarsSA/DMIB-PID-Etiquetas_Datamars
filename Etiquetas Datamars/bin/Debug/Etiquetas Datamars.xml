@@ -132,6 +132,11 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member>
+<member name="T:Etiquetas_Datamars.DataSet1.assignmentsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
 <member name="T:Etiquetas_Datamars.DataSet1.OrdenesGrabacionRow">
 <summary>
 Represents strongly named DataRow class.
@@ -203,6 +208,11 @@ Represents strongly named DataRow class.
 </summary>
 </member>
 <member name="T:Etiquetas_Datamars.DataSet1.uspGetIdSobrantesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1.assignmentsRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
@@ -282,6 +292,11 @@ Row event argument class
 Row event argument class
 </summary>
 </member>
+<member name="T:Etiquetas_Datamars.DataSet1.assignmentsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
 <member name="T:Etiquetas_Datamars.DataSet1TableAdapters.OrdenesGrabacionTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
@@ -353,6 +368,11 @@ Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
 <member name="T:Etiquetas_Datamars.DataSet1TableAdapters.uspGetIdSobrantesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Etiquetas_Datamars.DataSet1TableAdapters.assignmentsTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

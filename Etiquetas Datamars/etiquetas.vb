@@ -22,7 +22,6 @@
                     viewEtiqueta(0) = ruta & "DML1003.jpg"
                     viewEtiqueta(1) = anchoEtiq
                     viewEtiqueta(2) = altoEtiq
-
                 Case "Tipo 26"
                     viewEtiqueta(0) = ruta & "DML1026.jpg"
                     viewEtiqueta(1) = anchoEtiq
@@ -67,6 +66,18 @@
                     viewEtiqueta(0) = ruta & "DML1025.jpg"
                     viewEtiqueta(1) = anchoEtiq
                     viewEtiqueta(2) = altoEtiq
+                Case "TIPO 41"
+                    viewEtiqueta(0) = ruta & "DML1041.jpg"
+                    viewEtiqueta(1) = anchoEtiq
+                    viewEtiqueta(2) = altoEtiq
+                Case "Tipo 42"
+                    viewEtiqueta(0) = ruta & "DML1042.jpg"
+                    viewEtiqueta(1) = anchoEtiq
+                    viewEtiqueta(2) = altoEtiq
+                Case "Tipo 43"
+                    viewEtiqueta(0) = ruta & "DML1043.jpg"
+                    viewEtiqueta(1) = anchoEtiq
+                    viewEtiqueta(2) = altoEtiq
                 Case "tipo32"
                     viewEtiqueta(0) = ruta & "DML1032.jpg"
                     viewEtiqueta(1) = anchoEtiq
@@ -81,6 +92,14 @@
                     viewEtiqueta(2) = altoEtiq
                 Case "tipo30"
                     viewEtiqueta(0) = ruta & "DML1030.jpg"
+                    viewEtiqueta(1) = anchoEtiq
+                    viewEtiqueta(2) = altoEtiq
+                Case "tipo33"
+                    viewEtiqueta(0) = ruta & "DML10033.jpg"
+                    viewEtiqueta(1) = anchoEtiq
+                    viewEtiqueta(2) = altoEtiq
+                Case "Tipo44"
+                    viewEtiqueta(0) = ruta & "DML1044.jpg"
                     viewEtiqueta(1) = anchoEtiq
                     viewEtiqueta(2) = altoEtiq
                 Case Else
@@ -112,7 +131,7 @@
                     viewEtiqueta(1) = anchoEtiq
                     viewEtiqueta(2) = altoEtiq
                 Case "tipo6"
-                    viewEtiqueta(0) = ruta & "DMC10004.jpg"
+                    viewEtiqueta(0) = ruta & "DMC10006.jpg"
                     viewEtiqueta(1) = anchoEtiq + 3
                     viewEtiqueta(2) = anchoEtiq + 3
                 Case "tipo7"
@@ -179,10 +198,31 @@
                     viewEtiqueta(0) = ruta & "DMC10030.jpg"
                     viewEtiqueta(1) = anchoEtiq
                     viewEtiqueta(2) = altoEtiq
+                Case "tipo33"
+                    viewEtiqueta(0) = ruta & "DMC10033.jpg"
+                    viewEtiqueta(1) = anchoEtiq
+                    viewEtiqueta(2) = altoEtiq
+                Case "TIPO 41"
+                    viewEtiqueta(0) = ruta & "DMC10041.jpg"
+                    viewEtiqueta(1) = anchoEtiq
+                    viewEtiqueta(2) = altoEtiq
+                Case "Tipo 42"
+                    viewEtiqueta(0) = ruta & "DMC10042.jpg"
+                    viewEtiqueta(1) = anchoEtiq
+                    viewEtiqueta(2) = altoEtiq
+                Case "Tipo 43"
+                    viewEtiqueta(0) = ruta & "DMC10043.jpg"
+                    viewEtiqueta(1) = anchoEtiq
+                    viewEtiqueta(2) = altoEtiq
+                Case "Tipo44"
+                    viewEtiqueta(0) = ruta & "DMC10044.jpg"
+                    viewEtiqueta(1) = anchoEtiq
+                    viewEtiqueta(2) = altoEtiq
                 Case Else
                     viewEtiqueta(0) = ruta & "etiqueta_gen.jpg"
                     viewEtiqueta(1) = anchoEtiq
                     viewEtiqueta(2) = altoEtiq
+
             End Select
         Else
             viewEtiqueta(0) = ruta & "label_palet.jpg"
@@ -366,6 +406,22 @@
 
     End Sub
 
+
+    Public Sub printLote44()
+        'impresion de etiqueta report39 de lote tamaño 55mm x 40mm
+
+        'label.SetNamedSubStringValue("barcode", numLote)
+        label.SetNamedSubStringValue("numLote", numLote)
+        label.SetNamedSubStringValue("numarticulo", refArticulo)
+        label.SetNamedSubStringValue("description", refCliente)
+        label.SetNamedSubStringValue("feccadu", fecCaducidad)
+        'se abre el programa Bartender y vemos como queda la etiqueta con los datos reales. QUITAR en programa definitivo.
+        'objbt.Visible = True
+        label.PrintOut(False, False)
+
+
+    End Sub
+
     Public Sub printTipo28()
         'impresion de etiqueta report39 de lote tamaño 55mm x 40mm
 
@@ -389,7 +445,7 @@
         label.SetNamedSubStringValue("fechaCad", fecCaducidad)
         label.PrintOut(False, False)
     End Sub
-    Public Sub printLoteTVAO()
+    Public Sub printLoteTVAO(Optional ByVal ordenado As Boolean = True)
         Dim lastCodeChip As Long
 
         lastCodeChip = Long.Parse(tempFirstCodeLot) + (jerxLote)
@@ -398,8 +454,27 @@
         label.SetNamedSubStringValue("descripcion", descArticulo)
         label.SetNamedSubStringValue("qtlote", jerxLote)
         label.SetNamedSubStringValue("fechaCad", fecCaducidad)
-        label.SetNamedSubStringValue("chipInicio", tempFirstCodeLot)
-        label.SetNamedSubStringValue("chipFinal", (lastCodeChip - 1))
+        If ordenado Then
+            label.SetNamedSubStringValue("chipInicio", Decimal.Parse(tempFirstCodeLot).ToString("000000000000000"))
+            label.SetNamedSubStringValue("chipFinal", (lastCodeChip - 1).ToString("000000000000000"))
+        End If
+
+        ' objbt.Visible = True
+        label.PrintOut(False, False)
+        'asignamos a la variable tempFirstCode el valor calculado de tempLastCode, para que sea el codigo del primer chip si tenemos que imprimir
+        'mas de un lote.
+        tempFirstCodeLot = tempLastCodeLot
+    End Sub
+
+    Public Sub printLoteTipo43()
+        Dim lastCodeChip As Long
+
+        lastCodeChip = Long.Parse(tempFirstCodeLot) + (jerxLote)
+        tempLastCodeLot = lastCodeChip.ToString("000000000000000")
+        label.SetNamedSubStringValue("numLote", numLote)
+        label.SetNamedSubStringValue("fechaCad", fecFabricacion.Split("/")(1) & "/" & fecFabricacion.Split("/")(0))
+        label.SetNamedSubStringValue("chipInicio", "A0060000" & Decimal.Parse(tempFirstCodeLot).ToString("000000000000000"))
+        label.SetNamedSubStringValue("chipFinal", "A0060000" & (lastCodeChip - 1).ToString("000000000000000"))
         ' objbt.Visible = True
         label.PrintOut(False, False)
         'asignamos a la variable tempFirstCode el valor calculado de tempLastCode, para que sea el codigo del primer chip si tenemos que imprimir
@@ -408,6 +483,7 @@
     End Sub
 #End Region
 #Region "Etiquetas Cajas"
+
     Public Sub printCajaStandart()
         'impresión de etiqueta standart de Caja tamaño 60mm x 47mm
 
@@ -722,7 +798,7 @@
         label.SetNamedSubStringValue("fechaCad", fecCaducidad)
         label.PrintOut(False, False)
     End Sub
-    Public Sub printCajaTVAO()
+    Public Sub printCajaTVAO(Optional ByVal ordenado As Boolean = True)
         'impresión de etiquetas Report36 de Caja tamaño 55mm x 40mm
         Dim lastcode As Long
 
@@ -733,8 +809,10 @@
         label.SetNamedSubStringValue("descripcion", descArticulo)
         label.SetNamedSubStringValue("qtcaja", (jerxLote * lotxCaja))
         label.SetNamedSubStringValue("fechaCad", fecCaducidad)
-        label.SetNamedSubStringValue("chipInicio", tempFirtCode)
-        label.SetNamedSubStringValue("chipFinal", (lastcode - 1))
+        If ordenado Then
+            label.SetNamedSubStringValue("chipInicio", Decimal.Parse(tempFirtCode).ToString("000000000000000"))
+            label.SetNamedSubStringValue("chipFinal", (lastcode - 1).ToString("000000000000000"))
+        End If
         'objbt.Visible = True
         label.PrintOut(False, False)
         'asignamos a la variable tempFirstCode el valor calculado de tempLastCode, para que sea el codigo del primer chip si tenemos que imprimir
@@ -742,6 +820,8 @@
         tempFirtCode = tempLastCode
 
     End Sub
+
+
     Public Sub printCajaAr(contador As Integer, pedsap As String, texto As String, cajafin As Integer)
 
         label.SetNamedSubStringValue("saporder", pedsap)
@@ -773,6 +853,40 @@
         'asignamos a la variable tempFirstCode el valor calculado de tempLastCode, para que sea el codigo del primer chip si tenemos que imprimir
         'mas de un lote.
         tempFirtCode = tempLastCode
+
+    End Sub
+
+    Public Sub printCajaTipo43()
+        Dim lastCode As Long
+
+        lastCode = (Long.Parse(tempFirtCode) + ((Form1.numUnidadesPorlote.Value * Form1.numLotesPorCaja.Value)))
+        tempLastCode = lastCode.ToString("000000000000000")
+
+
+
+        label.SetNamedSubStringValue("numCaja", numCaja)
+        label.SetNamedSubStringValue("fechaCad", fecFabricacion.Split("/")(1) & "/" & fecFabricacion.Split("/")(0))
+        label.SetNamedSubStringValue("chipInicio", "A0060000" & Decimal.Parse(tempFirtCode).ToString("000000000000000"))
+        label.SetNamedSubStringValue("chipFinal", "A0060000" & (lastCode - 1).ToString("000000000000000"))
+        ' objbt.Visible = True
+        label.PrintOut(False, False)
+        'asignamos a la variable tempFirstCode el valor calculado de tempLastCode, para que sea el codigo del primer chip si tenemos que imprimir
+        'mas de un lote.
+        tempFirtCode = tempLastCode
+    End Sub
+
+
+    Public Sub printCaja44()
+        'impresion de etiqueta report39 de lote tamaño 55mm x 40mm
+
+        label.SetNamedSubStringValue("numCaja", numCaja)
+        label.SetNamedSubStringValue("numarticulo", refArticulo)
+        label.SetNamedSubStringValue("description", refCliente)
+        label.SetNamedSubStringValue("feccadu", fecCaducidad)
+        'se abre el programa Bartender y vemos como queda la etiqueta con los datos reales. QUITAR en programa definitivo.
+        'objbt.Visible = True
+        label.PrintOut(False, False)
+
 
     End Sub
 #End Region

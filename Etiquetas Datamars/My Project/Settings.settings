@@ -5,26 +5,26 @@
     <Setting Name="PartesMicrochipConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=SRVCHIP4;Initial Catalog=PartesMicrochip;Persist Security Info=True;User ID=sa;Password=F3l1xc4n&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;Data Source=192.168.16.16;Initial Catalog=PartesMicrochip;Persist Security Info=True;User ID=sa;Password=F3l1xc4n&lt;/ConnectionString&gt;
   &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=SRVCHIP4;Initial Catalog=PartesMicrochip;Persist Security Info=True;User ID=sa;Password=F3l1xc4n</Value>
+      <Value Profile="(Default)">Data Source=192.168.16.16;Initial Catalog=PartesMicrochip;Persist Security Info=True;User ID=sa;Password=F3l1xc4n</Value>
     </Setting>
     <Setting Name="MicrochipsConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=SRVCHIP4;Initial Catalog=Microchips;Persist Security Info=True;User ID=sa;Password=F3l1xc4n&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;Data Source=192.168.16.16;Initial Catalog=Microchips;Persist Security Info=True;User ID=sa;Password=F3l1xc4n&lt;/ConnectionString&gt;
   &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=SRVCHIP4;Initial Catalog=Microchips;Persist Security Info=True;User ID=sa;Password=F3l1xc4n</Value>
+      <Value Profile="(Default)">Data Source=192.168.16.16;Initial Catalog=Microchips;Persist Security Info=True;User ID=sa;Password=F3l1xc4n</Value>
     </Setting>
     <Setting Name="OrdenesConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=SRVCHIP4;Initial Catalog=Ordenes;Persist Security Info=True;User ID=sa;Password=F3l1xc4n&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;Data Source=192.168.16.16;Initial Catalog=Ordenes;Persist Security Info=True;User ID=sa;Password=F3l1xc4n&lt;/ConnectionString&gt;
   &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=SRVCHIP4;Initial Catalog=Ordenes;Persist Security Info=True;User ID=sa;Password=F3l1xc4n</Value>
+      <Value Profile="(Default)">Data Source=192.168.16.16;Initial Catalog=Ordenes;Persist Security Info=True;User ID=sa;Password=F3l1xc4n</Value>
     </Setting>
     <Setting Name="grab_genericaSQLConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
@@ -33,14 +33,6 @@
   &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=SRVCHIP3;Initial Catalog=grab_genericaSQL;Persist Security Info=True;User ID=sa;Password=F3l1xc4n</Value>
-    </Setting>
-    <Setting Name="grab_genericaSQLConnectionString1" Type="(Connection string)" Scope="Application">
-      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=SRVCHIP4;Initial Catalog=grab_genericaSQL;Persist Security Info=True;User ID=sa;Password=F3l1xc4n&lt;/ConnectionString&gt;
-  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
-&lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=SRVCHIP4;Initial Catalog=grab_genericaSQL;Persist Security Info=True;User ID=sa;Password=F3l1xc4n</Value>
     </Setting>
     <Setting Name="PartesMicrochipConnectionStringSRV3" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
@@ -53,10 +45,26 @@
     <Setting Name="PID_QueueConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=srvchip4;Initial Catalog=PID_Queue;User ID=sa;Password=F3l1xc4n&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;Data Source=192.168.16.16;Initial Catalog=Ordenes;Persist Security Info=True;User ID=sa;Password=F3l1xc4n&lt;/ConnectionString&gt;
   &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=srvchip4;Initial Catalog=PID_Queue;User ID=sa;Password=F3l1xc4n</Value>
+      <Value Profile="(Default)">Data Source=192.168.16.16;Initial Catalog=Ordenes;Persist Security Info=True;User ID=sa;Password=F3l1xc4n</Value>
+    </Setting>
+    <Setting Name="grab_genericaSQLConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=192.168.16.16;Initial Catalog=grab_genericaSQL;User ID=sa;Password=F3l1xc4n&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=192.168.16.16;Initial Catalog=grab_genericaSQL;User ID=sa;Password=F3l1xc4n</Value>
+    </Setting>
+    <Setting Name="PID_QueueConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=192.168.16.16;Initial Catalog=PID_Queue;Persist Security Info=True;User ID=sa;Password=F3l1xc4n&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=192.168.16.16;Initial Catalog=PID_Queue;Persist Security Info=True;User ID=sa;Password=F3l1xc4n</Value>
     </Setting>
   </Settings>
 </SettingsFile>

@@ -445,3 +445,53 @@ C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars
 C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars 2021\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.exe
 C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars 2021\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.xml
 C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\Etiquetas Datamars 2021\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.pdb
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe.config
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Interop.BarTender.dll
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.ResolveComReference.cache
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.exe
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.xml
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.pdb
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.pdb
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.xml
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbprojResolveAssemblyReference.cache
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Form1.resources
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.frmUsuarios.resources
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.ImprimirSobrantes.resources
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Resources.resources
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Usuario.resources
+C:\Users\acorr\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.GenerateResource.Cache
+E:\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe.config
+E:\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Interop.BarTender.dll
+E:\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.ResolveComReference.cache
+E:\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.exe
+E:\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.xml
+E:\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.pdb
+E:\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe
+E:\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.pdb
+E:\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.xml
+E:\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbprojResolveAssemblyReference.cache
+E:\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Form1.resources
+E:\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.frmUsuarios.resources
+E:\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.ImprimirSobrantes.resources
+E:\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Resources.resources
+E:\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Usuario.resources
+E:\OneDrive - Datamars SA\PROYECTOS VISUAL STUDIO\GITHUB\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.GenerateResource.Cache
+C:\Users\pablo.piqueras\Downloads\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe.config
+C:\Users\pablo.piqueras\Downloads\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.exe
+C:\Users\pablo.piqueras\Downloads\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.pdb
+C:\Users\pablo.piqueras\Downloads\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\bin\Debug\Etiquetas Datamars.xml
+C:\Users\pablo.piqueras\Downloads\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbprojAssemblyReference.cache
+C:\Users\pablo.piqueras\Downloads\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Interop.BarTender.dll
+C:\Users\pablo.piqueras\Downloads\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.ResolveComReference.cache
+C:\Users\pablo.piqueras\Downloads\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Form1.resources
+C:\Users\pablo.piqueras\Downloads\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.frmUsuarios.resources
+C:\Users\pablo.piqueras\Downloads\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.ImprimirSobrantes.resources
+C:\Users\pablo.piqueras\Downloads\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Resources.resources
+C:\Users\pablo.piqueras\Downloads\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas_Datamars.Usuario.resources
+C:\Users\pablo.piqueras\Downloads\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.GenerateResource.cache
+C:\Users\pablo.piqueras\Downloads\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.CoreCompileInputs.cache
+C:\Users\pablo.piqueras\Downloads\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.vbproj.CopyComplete
+C:\Users\pablo.piqueras\Downloads\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.exe
+C:\Users\pablo.piqueras\Downloads\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.xml
+C:\Users\pablo.piqueras\Downloads\DMIB-PID-Etiquetas_Datamars\Etiquetas Datamars\obj\Debug\Etiquetas Datamars.pdb

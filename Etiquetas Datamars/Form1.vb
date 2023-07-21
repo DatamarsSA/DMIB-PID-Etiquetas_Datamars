@@ -21,7 +21,7 @@
         numMesCad.Value = Now.Month
 
         Dim cal As System.Globalization.Calendar = System.Globalization.DateTimeFormatInfo.CurrentInfo.Calendar
-        txtSemana.Text = cal.GetWeekOfYear(Now, Globalization.CalendarWeekRule.FirstDay, DayOfWeek.Monday).ToString
+        txtSemana.Text = cal.GetWeekOfYear(Now, Globalization.CalendarWeekRule.FirstFourDayWeek, DayOfWeek.Monday).ToString
         'indicamos el numero de la caja Inicial
         CajaInicial = txtCaja.Value
         'indicamos el numero total de cajas que se van a imprimir, desde el numero inicial de caja.
@@ -90,7 +90,7 @@
         txtCodPedido.Text = Replace(txtCodPedido.Text, "#", "")
         etiquetasImpresas = pedidoImpreso(txtCodPedido.Text)
         'si el pedido ya esta impreso preguntamos si queremos reimprimirlo
-        If etiquetasImpresas <> "" Then respuesta = MsgBox("Pedido Impreso el " & etiquetasImpresas & ". ¿Quiere ReImprimilo?", MsgBoxStyle.YesNo)
+        If etiquetasImpresas <> "" Then respuesta = MsgBox("Pedido impreso el " & etiquetasImpresas & ". ¿Quieres reimprimirlo?", MsgBoxStyle.YesNo)
         If etiquetasImpresas = "" Or etiquetasImpresas <> "" AndAlso respuesta = 6 Then
             'si el pedido es nuevo o Ya impreso y queremos modificarlo
             dt = uspDatosPedidos.GetData(txtCodPedido.Text)
@@ -113,7 +113,7 @@
 
                 retorno = True
             Else
-                MessageBox.Show("El Pedido No Existe. Compruebelo", "ATENCION", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                MessageBox.Show("El pedido no existe. Compruébelo", "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 limpiar()
                 retorno = False
             End If
@@ -204,13 +204,13 @@
             End If
             'Comprobamos si el pedido es mayor de cierta cantidad de jeringas para poder enviar todo el rango.
             Dim qtyRedondeo As Integer
-            If Not (txtRefProducto.Text.Trim = "996 0000-AR2" Or txtRefProducto.Text.Trim = "996 0925-JPN" Or txtRefProducto.Text.Trim = "992 4000-JPN") Then
+            If Not (txtRefProducto.Text.Trim = "996 0000-AR2" Or txtRefProducto.Text.Trim = "996 0925-JPN" Or txtRefProducto.Text.Trim = "992 4001-JPN") Then
                 qtyRedondeo = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "REDONDEO", "cantidad")
                 If Integer.Parse(txtCantidad.Text) >= qtyRedondeo Then
                     ' verificamos que la cantidad del pedido y la cantidad del rango, si el rango es mayor esa es la cantidad del pedido que debemos usar.
                     comprobarSobrantes()
                     If Integer.Parse(cantRango) > Integer.Parse(txtCantidad.Text) Then
-                        If Not reImprimir Then MsgBox("Pedido Con Sobrantes Se cambiara la Cantidad del Pedido al Rango: " & cantRango)
+                        If Not reImprimir Then MsgBox("Pedido Con Sobrantes. Se cambiará la Cantidad del Pedido al Rango: " & cantRango)
                         txtCantidad.Text = cantRango
                     End If
                 End If
@@ -700,7 +700,7 @@
                     Dim nombreEtiqueta As String
 
                     'Si el pedido es de Kyoritsu cambiamos el formato de la fecha de caducidad y ponemos el numero de esterilización.
-                    If txtRefProducto.Text.Trim = "996 0925-JPN" Or txtRefProducto.Text.Trim = "992 4000-JPN" Then
+                    If txtRefProducto.Text.Trim = "996 0925-JPN" Or txtRefProducto.Text.Trim = "992 4001-JPN" Then
                         Dim expRegular, expAño As String
                         Dim cadValida As Boolean = False
                         expAño = "(" & txtAño.Value & "|" & (txtAño.Value - 1) & ")"
@@ -728,7 +728,7 @@
 
                     'Creamos el objeto etiqueta
 
-                    If txtRefProducto.Text.Trim = "992 4000-JPN" Then
+                    If txtRefProducto.Text.Trim = "992 4001-JPN" Then
                         label = objbt.Formats.Open(ruta & "DML1028.btw")
                     Else
                         label = objbt.Formats.Open(ruta & "DML1039.btw")
@@ -740,7 +740,7 @@
                     For i = empezarXlote To (numLotes.Value + empezarXlote) - 1
                         numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
 
-                        If txtRefProducto.Text.Trim = "992 4000-JPN" Then
+                        If txtRefProducto.Text.Trim = "992 4001-JPN" Then
                             printTipo28()
                         Else
                             printReport39()
@@ -756,7 +756,67 @@
                         espera(0.05)
                     Next
                     label.Close(BarTender.BtSaveOptions.btDoNotSaveChanges)
-                Case "TVAL", "tipo16", "tipo18", "tipo25", "Tipo 25 (DML1025)"
+                Case "Tipo44", "Tipo45"
+                    fecCaducidad = "EXP.:  20" & numAñoCad.Value & "-" & numMesCad.Value.ToString("00")
+                    ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "LOTE", "ruta_lote")
+
+                    Dim nombreEtiqueta As String
+
+                    'Si el pedido es de Kyoritsu cambiamos el formato de la fecha de caducidad y ponemos el numero de esterilización.
+                    'If txtRefProducto.Text.Trim = "996 0925-JPN" Or txtRefProducto.Text.Trim = "992 4001-JPN" Then
+                    '    Dim expRegular, expAño As String
+                    '    Dim cadValida As Boolean = False
+                    '    expAño = "(" & txtAño.Value & "|" & (txtAño.Value - 1) & ")"
+                    '    expRegular = "^(" & expAño & "(0[1-9]|1[012])([0-2][0-9]|3[01]))/(\d\d[A-D])$"
+                    '    fecCaducidad = "EXP   20" & numAñoCad.Value & "." & numMesCad.Value.ToString("00")
+                    '    'fecCaducidad = "" & numMesCad.Value.ToString("00") & "/20" & numAñoCad.Value.ToString("00")
+                    '    'Do While cadValida = False
+                    '    '    numPedido = txtJaponBatch.Text
+                    '    '    'numPedido = InputBox("Este Pedido se tiene que Introducir el certificado de Esterilización", "Certificado Esterilizacion").ToUpper
+                    '    '    If System.Text.RegularExpressions.Regex.IsMatch(numPedido, expRegular) = True Then
+                    '    '        cadValida = True
+
+                    '    '    Else
+                    '    '        MessageBox.Show("Formato de Certificado Incorrecto, Por Favor Compruebelo", "Certificado Esterilización", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    '    '        cmdImprimirLotes.Enabled = True
+                    '    '        Exit Sub
+                    '    '    End If
+                    '    'Loop
+                    '    numPedido = txtJaponBatch.Text
+                    '    If System.Text.RegularExpressions.Regex.IsMatch(numPedido, expRegular) = False Then
+                    '        MessageBox.Show("Formato de Certificado Incorrecto, Por Favor Compruebelo", "Certificado Esterilización", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    '        Exit Sub
+                    '    End If
+                    'End If
+
+                    'Creamos el objeto etiqueta
+                    If ListBox1.SelectedItem = "Tipo45" Then
+                        label = objbt.Formats.Open(ruta & "DML1045.btw")
+                    Else
+                        label = objbt.Formats.Open(ruta & "DML1044.btw")
+                    End If
+
+                    fecCaducidad = "EXP   20" & numAñoCad.Value & "." & numMesCad.Value.ToString("00")
+                    fecCaducidad = "" & numMesCad.Value.ToString("00") & "/20" & numAñoCad.Value.ToString("00")
+
+                    etImpConf = label.PrintSetup
+                    etImpConf.Printer = cListImp.Text
+
+                    For i = empezarXlote To (numLotes.Value + empezarXlote) - 1
+                        numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
+
+                        printLote44()
+
+                        loteinicial += 1
+                        If loteinicial = (lotxCaja + 1) Then
+                            loteinicial = 1
+                            auxcaja += 1
+                        End If
+                        'introducimos una espera para que la impresora reciba la etiqueta y no se alternen.
+                        espera(0.05)
+                    Next
+                    label.Close(BarTender.BtSaveOptions.btDoNotSaveChanges)
+                Case "TVAL", "tipo16", "tipo18", "tipo25", "Tipo 25 (DML1025)", "Tipo 42"
                     'ETIQUETAS ESPECIFICAS DE TVA
                     Dim modeloEti As String
                     fecCaducidad = "EXP. 20" & numAñoCad.Value & "-" & numMesCad.Value.ToString("00")
@@ -765,6 +825,8 @@
                         modeloEti = "DML1018.btw"
                     ElseIf ListBox1.SelectedItem = "tipo16" Then
                         modeloEti = "DML1016.btw"
+                    ElseIf ListBox1.SelectedItem = "Tipo 42" Then
+                        modeloEti = "DML1042.btw"
                     Else
                         modeloEti = "DML1025.btw"
                     End If
@@ -785,7 +847,7 @@
                         espera(0.2)
                     Next
                     label.Close(BarTender.BtSaveOptions.btDoNotSaveChanges)
-                Case "TVALO", "FL1100", "FL1103", "tipo19", "tipo24"
+                Case "TVALO", "FL1100", "FL1103", "tipo19", "tipo24", "TIPO 41"
                     'Etiquetas especificas TVA Lote Ordenado.
                     fecCaducidad = "EXP. 20" & numAñoCad.Value & "-" & numMesCad.Value.ToString("00")
                     ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "LOTE", "ruta_lote")
@@ -798,6 +860,7 @@
                         If ListBox1.SelectedItem = "FL1103" Then label = objbt.Formats.Open(ruta & "FL1103_DM_ft.btw")
                         If ListBox1.SelectedItem = "tipo19" Then label = objbt.Formats.Open(ruta & "DML1019.btw")
                         If ListBox1.SelectedItem = "tipo24" Then label = objbt.Formats.Open(ruta & "DML1024.btw")
+                        If ListBox1.SelectedItem = "TIPO 41" Then label = objbt.Formats.Open(ruta & "DML1041.btw")
                     End If
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
@@ -814,7 +877,32 @@
                         espera(0.2)
                     Next
                     label.Close(BarTender.BtSaveOptions.btDoNotSaveChanges)
-                Case "tipo32", "tipo31", "tipo29", "tipo30"
+                Case "Tipo 43"
+                    'Etiquetas especificas TVA Lote Ordenado.
+                    'fecCaducidad = "EXP. 20" & numAñoCad.Value & "-" & numMesCad.Value.ToString("00")
+                    fecCaducidad = numMesCad.Value.ToString("00") & "/" & "20" & numAñoCad.Value
+                    ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "LOTE", "ruta_lote")
+
+                    If etiManual = True Then calcularChipInicial(0) 'AndAlso empezarXlote <> 1
+                    ' ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "LOTE", "ruta_lote")
+                    label = objbt.Formats.Open(ruta & "DML1043.btw")
+
+                    etImpConf = label.PrintSetup
+                    etImpConf.Printer = cListImp.Text
+
+                    For i = empezarXlote To (numLotes.Value + empezarXlote) - 1
+                        numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
+                        printLoteTipo43()
+                        loteinicial += 1
+                        If loteinicial = (lotxCaja + 1) Then
+                            loteinicial = 1
+                            auxcaja += 1
+                        End If
+                        'introducimos una espera para que la impresora reciba la etiqueta y no se alternen.
+                        espera(0.2)
+                    Next
+                    label.Close(BarTender.BtSaveOptions.btDoNotSaveChanges)
+                Case "tipo32", "tipo31", "tipo29", "tipo30", "tipo33"
                     'NUEVAS ETIQUETAS ITALIA QIR-5510
                     fecCaducidad = "EXP. 20" & numAñoCad.Value & "-" & numMesCad.Value.ToString("00")
                     ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "LOTE", "ruta_lote")
@@ -822,13 +910,18 @@
                     If ListBox1.SelectedItem = "tipo32" Then label = objbt.Formats.Open(ruta & "DML1032_992 0000-IT2.btw")
                     If ListBox1.SelectedItem = "tipo31" Then label = objbt.Formats.Open(ruta & "DML1031_992 1000-IT2.btw")
                     If ListBox1.SelectedItem = "tipo29" Then label = objbt.Formats.Open(ruta & "DML1029_992 0000-IT3.btw")
-                    If ListBox1.SelectedItem = "tipo30" Then label = objbt.Formats.Open(ruta & "DML1030_992 0000-ITA.btw")
+                    If ListBox2.SelectedItem = "tipo30" Then label = objbt.Formats.Open(ruta & "DML1030_992 0000-ITA.btw")
+                    If ListBox2.SelectedItem = "tipo33" Then label = objbt.Formats.Open(ruta & "DML1033.btw")
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
 
                     For i = empezarXlote To (numLotes.Value + empezarXlote) - 1
                         numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
-                        printLoteTVAO()
+                        If ListBox2.SelectedItem = "tipo33" Then
+                            printLoteTVAO(False)
+                        Else
+                            printLoteTVAO()
+                        End If
                         loteinicial += 1
                         If loteinicial = (lotxCaja + 1) Then
                             loteinicial = 1
@@ -942,23 +1035,44 @@
                         respuesta = 6
                     End If
                     If respuesta = 6 Then
-                        'se tiene que realizar el cambio de las etiquetas
-                        mostrarEtiqCaja("tipo1")
-                        MsgBox("!Se van ha Imprimir las Etiquetas de 60x47mm¡, Cambie las etiquetas en la impresora Referencia BOM:600 0200-050", MsgBoxStyle.Information)
-                        ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "CAJA", "ruta_caja")
-                        label = objbt.Formats.Open(ruta & "DMC10001.btw")
-                        etImpConf = label.PrintSetup
-                        etImpConf.Printer = cListImp.Text
-                        fecCaducidad = "EXP.: 20" & numAñoCad.Value & "-" & numMesCad.Value.ToString("00")
-                        'ponemos el contador de cajas al valor de cajas iniciales, para que no sume. si no que imprima desde el valor inicial.
-                        auxCaja = Integer.Parse(empezarXCaja) '(txtCaja.Value)
-                        For i As Integer = 0 To (numCajas.Value) - 1
-                            numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
-                            printCajaTipo1()
-                            auxCaja += 1
-                            'introducimos una espera para que la impresora reciba la etiqueta y no se alternen.
-                            espera(0.2)
-                        Next
+
+                        If ListBox2.SelectedItem = "tipo6" Then
+                            mostrarEtiqCaja("Std")
+                            MsgBox("!Se van a Imprimir las Etiquetas de 60x47mm¡, Cambie las etiquetas en la impresora Referencia BOM:600 0200-050", MsgBoxStyle.Information)
+                            ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "CAJA", "ruta_caja")
+                            label = objbt.Formats.Open(ruta & "DMC_standart.btw")
+                            etImpConf = label.PrintSetup
+                            etImpConf.Printer = cListImp.Text
+                            'ponemos el contador de cajas al valor de cajas iniciales, para que no sume. si no que imprima desde el valor inicial.
+                            auxCaja = Integer.Parse(empezarXCaja) '(txtCaja.Value)
+                            For i As Integer = 0 To (numCajas.Value) - 1
+                                numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
+                                printCajaStandart()
+                                auxCaja += 1
+                                'introducimos una espera para que la impresora reciba la etiqueta y no se alternen.
+                                espera(0.2)
+                            Next
+                        Else
+
+                            'se tiene que realizar el cambio de las etiquetas
+                            mostrarEtiqCaja("tipo1")
+                            MsgBox("!Se van a Imprimir las Etiquetas de 60x47mm¡, Cambie las etiquetas en la impresora Referencia BOM:600 0200-050", MsgBoxStyle.Information)
+                            ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "CAJA", "ruta_caja")
+                            label = objbt.Formats.Open(ruta & "DMC10001.btw")
+                            etImpConf = label.PrintSetup
+                            etImpConf.Printer = cListImp.Text
+                            fecCaducidad = "EXP.: 20" & numAñoCad.Value & "-" & numMesCad.Value.ToString("00")
+                            'ponemos el contador de cajas al valor de cajas iniciales, para que no sume. si no que imprima desde el valor inicial.
+                            auxCaja = Integer.Parse(empezarXCaja) '(txtCaja.Value)
+                            For i As Integer = 0 To (numCajas.Value) - 1
+                                numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
+                                printCajaTipo1()
+                                auxCaja += 1
+                                'introducimos una espera para que la impresora reciba la etiqueta y no se alternen.
+                                espera(0.2)
+                            Next
+                        End If
+
                         label.Close(BarTender.BtSaveOptions.btDoNotSaveChanges)
                     End If
                 Case "tipo5"
@@ -1009,7 +1123,7 @@
                     If respuesta = 6 Then
                         'se tiene que realizar el cambio de las etiquetas
                         mostrarEtiqCaja("Std")
-                        MsgBox("!Se van ha Imprimir las Etiquetas de 60x47mm¡, Cambie las etiquetas en la impresora Referencia BOM:600 0200-050", MsgBoxStyle.Information)
+                        MsgBox("!Se van a Imprimir las Etiquetas de 60x47mm¡, Cambie las etiquetas en la impresora Referencia BOM:600 0200-050", MsgBoxStyle.Information)
                         ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "CAJA", "ruta_caja")
                         label = objbt.Formats.Open(ruta & "DMC_standart.btw")
                         etImpConf = label.PrintSetup
@@ -1029,13 +1143,13 @@
                     Dim respuesta As Integer
                     'Se imprimen Primero las etiquetas del Tipo 9
                     If reImprimir = True And etiManual = True Then
-                        respuesta = MsgBox("Tiene 2 tipos de Etiquetas. Estas son las Etiquetas 40mmX50mm. ¿Necesitas Imprimirlas?", vbYesNo, "REIMPRESION DE ETIQUETAS")
+                        respuesta = MsgBox("Tiene 2 tipos de Etiquetas. Estas son las Etiquetas 40mmX50mm. ¿Necesitas Imprimirlas?", vbYesNo, "REIMPRESIÓN DE ETIQUETAS")
                     Else
                         respuesta = 6
 
                     End If
                     If respuesta = 6 Then
-                        MsgBox("Tiene 2 tipos de Etiquetas. Estas son las Etiquetas 40mmX50mm, Cambie las etiquetas en la impresora Referencia BOM:600 0200-053", MsgBoxStyle.Information)
+                        MsgBox("Tiene 2 tipos de Etiquetas. Estas son las Etiquetas 40mmX50mm, Cambie las etiquetas en la impresora Referencia: 600 0200-053", MsgBoxStyle.Information)
                         fecCaducidad = "20" & numAñoCad.Value & "-" & numMesCad.Value.ToString("00")
                         ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "CAJA", "ruta_caja")
                         label = objbt.Formats.Open(ruta & "DMC10010.btw")
@@ -1060,7 +1174,7 @@
                     If respuesta = 6 Then
                         'se tiene que realizar el cambio de las etiquetas
                         mostrarEtiqCaja("Std")
-                        MsgBox("!Se van ha Imprimir las Etiquetas de 60x47mm¡, Cambie las etiquetas en la impresora Referencia BOM:600 0200-050", MsgBoxStyle.Information)
+                        MsgBox("!Se van a Imprimir las Etiquetas de 60x47mm¡, Cambie las etiquetas en la impresora Referencia :600 0200-050", MsgBoxStyle.Information)
                         ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "CAJA", "ruta_caja")
                         label = objbt.Formats.Open(ruta & "DMC_standart.btw")
                         etImpConf = label.PrintSetup
@@ -1124,7 +1238,7 @@
                     If respuesta = 6 Then
                         'se tiene que realizar el cambio de las etiquetas
 
-                        MsgBox("!Se van ha Imprimir las Etiquetas de 60x47mm¡, Cambie las etiquetas en la impresora Referencia BOM:600 0200-050", MsgBoxStyle.Information)
+                        MsgBox("!Se van a Imprimir las Etiquetas de 60x47mm¡, Cambie las etiquetas en la impresora Referencia BOM:600 0200-050", MsgBoxStyle.Information)
 
                         If ListBox2.SelectedItem = "tipo12" Then
                             mostrarEtiqCaja("Std")
@@ -1296,7 +1410,7 @@
                 Case "report40", "report44", "Tipo28"
                     fecCaducidad = "EXP. 20" & numAñoCad.Value & "-" & numMesCad.Value.ToString("00")
                     ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "CAJA", "ruta_caja")
-                    If txtRefProducto.Text.Trim = "992 4000-JPN" Then
+                    If txtRefProducto.Text.Trim = "992 4001-JPN" Then
                         label = objbt.Formats.Open(ruta & "DMC10028.btw")
                     Else
                         label = objbt.Formats.Open(ruta & "DMC10040.btw")
@@ -1304,7 +1418,7 @@
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
                     'Si el pedido es de Kyoritsu cambiamos el formato de la fecha de caducidad y ponemos el numero de esterilización.
-                    If txtRefProducto.Text.Trim = "996 0925-JPN" Or txtRefProducto.Text.Trim = "992 4000-JPN" Then
+                    If txtRefProducto.Text.Trim = "996 0925-JPN" Or txtRefProducto.Text.Trim = "992 4001-JPN" Then
                         Dim expRegular, expAño As String
                         Dim cadValida As Boolean = False
                         expAño = "(" & txtAño.Value & "|" & (txtAño.Value - 1) & ")"
@@ -1330,7 +1444,7 @@
 
                     For i As Integer = 0 To (numCajas.Value) - 1
                         numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
-                        If txtRefProducto.Text.Trim = "992 4000-JPN" Then
+                        If txtRefProducto.Text.Trim = "992 4001-JPN" Then
                             Dim cantidad As Integer = numLotesPorCaja.Value * numUnidadesPorlote.Value
                             printCajaTipo28(cantidad)
                         Else
@@ -1341,6 +1455,33 @@
                         espera(0.2)
                     Next
                     label.Close(BarTender.BtSaveOptions.btDoNotSaveChanges)
+
+
+                Case "Tipo44", "Tipo45"
+                    fecCaducidad = "EXP. 20" & numAñoCad.Value & "-" & numMesCad.Value.ToString("00")
+                    ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "CAJA", "ruta_caja")
+                    If ListBox2.SelectedItem = "Tipo45" Then
+                        label = objbt.Formats.Open(ruta & "DMC10045.btw")
+                    Else
+                        label = objbt.Formats.Open(ruta & "DMC10044.btw")
+                    End If
+
+                    etImpConf = label.PrintSetup
+                    etImpConf.Printer = cListImp.Text
+                    'Si el pedido es de Kyoritsu cambiamos el formato de la fecha de caducidad y ponemos el numero de esterilización.
+
+
+                    fecCaducidad = numMesCad.Value.ToString("00") & "/20" & numAñoCad.Value
+
+                    For i As Integer = 0 To (numCajas.Value) - 1
+                        numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
+                        printCaja44()
+                        auxCaja += 1
+                        'introducimos una espera para que la impresora reciba la etiqueta y no se alternen.
+                        espera(0.2)
+                    Next
+                    label.Close(BarTender.BtSaveOptions.btDoNotSaveChanges)
+
                 Case "Tipoar"
                     ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "CAJA", "ruta_caja")
                     label = objbt.Formats.Open(ruta & "DMC100AR2.btw")
@@ -1364,7 +1505,7 @@
                         espera(0.2)
                     Next
                     label.Close(BarTender.BtSaveOptions.btDoNotSaveChanges)
-                Case "TVAC", "tipo16", "tipo17", "tipo18", "tipo25", "Tipo 25 (DMC10025)"
+                Case "TVAC", "tipo16", "tipo17", "tipo18", "tipo25", "Tipo 25 (DMC10025)", "Tipo 42"
                     Dim modeloeti As String
                     fecCaducidad = "EXP. 20" & numAñoCad.Value & "-" & numMesCad.Value.ToString("00")
                     If ListBox2.SelectedItem = "tipo17" Then
@@ -1374,6 +1515,8 @@
                         modeloeti = "DMC10018.btw"
                     ElseIf ListBox2.SelectedItem = "tipo16" Then
                         modeloeti = "DMC10016.btw"
+                    ElseIf ListBox2.SelectedItem = "Tipo 42" Then
+                        modeloeti = "DMC10042.btw"
                     Else
                         modeloeti = "DMC10025.btw"
                     End If
@@ -1390,7 +1533,7 @@
                         espera(0.2)
                     Next
                     label.Close(BarTender.BtSaveOptions.btDoNotSaveChanges)
-                Case "TVACO", "FC10092", "FC10093", "tipo19", "tipo21", "tipo24"
+                Case "TVACO", "FC10092", "FC10093", "tipo19", "tipo21", "tipo24", "TIPO 41"
                     Dim numLoteTmp As Integer
                     ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "CAJA", "ruta_caja")
                     fecCaducidad = "EXP. 20" & numAñoCad.Value & "-" & numMesCad.Value.ToString("00")
@@ -1403,6 +1546,7 @@
                         If ListBox2.SelectedItem = "tipo19" Then label = objbt.Formats.Open(ruta & "DMC10019.btw")
                         If ListBox2.SelectedItem = "tipo21" Then label = objbt.Formats.Open(ruta & "DMC10021.btw")
                         If ListBox2.SelectedItem = "tipo24" Then label = objbt.Formats.Open(ruta & "DMC10024.btw")
+                        If ListBox2.SelectedItem = "TIPO 41" Then label = objbt.Formats.Open(ruta & "DMC10041.btw")
                     End If
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
@@ -1421,15 +1565,15 @@
                         espera(0.2)
                     Next
                     label.Close(BarTender.BtSaveOptions.btDoNotSaveChanges)
-                    'NUEVAS ETIQUETAS ITALIA QIR-5510
-                Case "tipo32", "tipo31", "tipo29", "tipo30"
+
+
+                Case "Tipo 43"
                     Dim numLoteTmp As Integer
                     ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "CAJA", "ruta_caja")
-                    fecCaducidad = "EXP. 20" & numAñoCad.Value & "-" & numMesCad.Value.ToString("00")
-                    If ListBox2.SelectedItem = "tipo32" Then label = objbt.Formats.Open(ruta & "DMC10032_992 0000-IT2.btw")
-                    If ListBox2.SelectedItem = "tipo31" Then label = objbt.Formats.Open(ruta & "DMC10031_992 1000-IT2.btw")
-                    If ListBox2.SelectedItem = "tipo29" Then label = objbt.Formats.Open(ruta & "DMC10029_992 0000-IT3.btw")
-                    If ListBox2.SelectedItem = "tipo30" Then label = objbt.Formats.Open(ruta & "DMC10030_992 0000-ITA.btw")
+                    fecCaducidad = numMesCad.Value.ToString("00") & "/20" & numAñoCad.Value
+                    'ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "CAJA", "ruta_caja")
+                    label = objbt.Formats.Open(ruta & "DMC10043.btw")
+
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
                     'si la etiqueta es manual y numero de caja no es 1 se tiene que calcula el chip inicial de caja
@@ -1441,12 +1585,46 @@
                         If (jerxLote * lotxCaja) > (jerxLote * ((numLoteTmp + empezarXlote) - 1)) Then lotxCaja = ((numLoteTmp + empezarXlote) - 1)
                         'restamos a la variable de lotes temporales la cantidad de lotes por caja. Esto se hace por si la ultima caja hay menos lotes que los reglamentarios.
                         numLoteTmp = numLoteTmp - lotxCaja
-                        printCajaTVAO()
+                        printCajaTipo43()
                         auxCaja += 1
                         'introducimos una espera para que la impresora reciba la etiqueta y no se alternen.
                         espera(0.2)
                     Next
                     label.Close(BarTender.BtSaveOptions.btDoNotSaveChanges)
+
+                    'NUEVAS ETIQUETAS ITALIA QIR-5510
+                Case "tipo32", "tipo31", "tipo29", "tipo30", "tipo33"
+                    Dim numLoteTmp As Integer
+                    ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "CAJA", "ruta_caja")
+                    fecCaducidad = "EXP. 20" & numAñoCad.Value & "-" & numMesCad.Value.ToString("00")
+                    If ListBox2.SelectedItem = "tipo32" Then label = objbt.Formats.Open(ruta & "DMC10032_992 0000-IT2.btw")
+                    If ListBox2.SelectedItem = "tipo31" Then label = objbt.Formats.Open(ruta & "DMC10031_992 1000-IT2.btw")
+                    If ListBox2.SelectedItem = "tipo29" Then label = objbt.Formats.Open(ruta & "DMC10029_992 0000-IT3.btw")
+                    If ListBox2.SelectedItem = "tipo30" Then label = objbt.Formats.Open(ruta & "DMC10030_992 0000-ITA.btw")
+                    If ListBox2.SelectedItem = "tipo33" Then label = objbt.Formats.Open(ruta & "DMC10033.btw")
+                    etImpConf = label.PrintSetup
+                    etImpConf.Printer = cListImp.Text
+                    'si la etiqueta es manual y numero de caja no es 1 se tiene que calcula el chip inicial de caja
+                    If etiManual = True Then calcularChipInicial(1)
+                    'asignamos la cantidad de lotes a una variable temporal.
+                    numLoteTmp = numLotes.Value
+                    For i As Integer = 0 To (numCajas.Value) - 1
+                        numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
+                        If (jerxLote * lotxCaja) > (jerxLote * ((numLoteTmp + empezarXlote) - 1)) Then lotxCaja = ((numLoteTmp + empezarXlote) - 1)
+                        'restamos a la variable de lotes temporales la cantidad de lotes por caja. Esto se hace por si la ultima caja hay menos lotes que los reglamentarios.
+                        numLoteTmp = numLoteTmp - lotxCaja
+                        If ListBox2.SelectedItem = "tipo33" Then
+                            printCajaTVAO(False)
+                        Else
+                            printCajaTVAO()
+                        End If
+                        auxCaja += 1
+                        'introducimos una espera para que la impresora reciba la etiqueta y no se alternen.
+                        espera(0.2)
+                    Next
+                    label.Close(BarTender.BtSaveOptions.btDoNotSaveChanges)
+
+
                 Case "tipo20"
                     Dim numLoteTmp As Integer
                     ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "CAJA", "ruta_caja")
@@ -1632,7 +1810,7 @@
 
             'End Try
 
-            If txtRefProducto.Text.Trim = "996 0925-JPN" Or txtRefProducto.Text.Trim = "992 4000-JPN" Then
+            If txtRefProducto.Text.Trim = "996 0925-JPN" Or txtRefProducto.Text.Trim = "992 4001-JPN" Then
                 labelJapon.Visible = True
                 txtJaponBatch.Visible = True
             Else
