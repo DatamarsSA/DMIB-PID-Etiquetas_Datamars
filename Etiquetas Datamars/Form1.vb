@@ -1647,6 +1647,42 @@
                         espera(0.2)
                     Next
                     label.Close(BarTender.BtSaveOptions.btDoNotSaveChanges)
+
+                Case "Tipo 46"
+                    'EL TIPO 46 SON DOS ETQIUETAS, LA TIPO 22 Y LA REPORT 42
+                    fecCaducidad = "EXP. 20" & numAñoCad.Value & "-" & numMesCad.Value.ToString("00")
+                    ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "CAJA", "ruta_caja")
+                    'TIPO 22
+                    label = objbt.Formats.Open(ruta & "DMC10022.btw")
+                    etImpConf = label.PrintSetup
+                    etImpConf.Printer = cListImp.Text
+                    For i As Integer = 0 To (numCajas.Value) - 1
+                        numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
+                        printcajaTipo14()
+                        auxCaja += 1
+                        'introducimos una espera para que la impresora reciba la etiqueta y no se alternen.
+                        espera(0.2)
+                    Next
+                    label.Close(BarTender.BtSaveOptions.btDoNotSaveChanges)
+                    'REPORT 42
+                    Dim numLoteTmp As Integer
+                    If etiManual = True Then calcularChipInicial(1)
+                    'asignamos la cantidad de lotes a una variable temporal.
+                    numLoteTmp = numLotes.Value
+                    label = objbt.Formats.Open(ruta & "DMC10036.btw")
+                    etImpConf = label.PrintSetup
+                    etImpConf.Printer = cListImp.Text
+                    For i As Integer = 0 To (numCajas.Value) - 1
+                        numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
+                        If (jerxLote * lotxCaja) > (jerxLote * ((numLoteTmp + empezarXlote) - 1)) Then lotxCaja = ((numLoteTmp + empezarXlote) - 1)
+                        'restamos a la variable de lotes temporales la cantidad de lotes por caja. Esto se hace por si la ultima caja hay menos lotes que los reglamentarios.
+                        numLoteTmp = numLoteTmp - lotxCaja
+                        printCajaReport36(1)
+                        auxCaja += 1
+                        'introducimos una espera para que la impresora reciba la etiqueta y no se alternen.
+                        espera(0.2)
+                    Next
+                    label.Close(BarTender.BtSaveOptions.btDoNotSaveChanges)
             End Select
             txtCajasImp.Text = 1
         Else

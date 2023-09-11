@@ -346,7 +346,7 @@ Partial Class Form1
         '
         Me.ListBox2.Enabled = False
         Me.ListBox2.FormattingEnabled = True
-        Me.ListBox2.Items.AddRange(New Object() {"Ninguna", "Std", "tipo1", "tipo3", "tipo4", "tipo5", "tipo6", "tipo7", "tipo9", "tipo10", "tipo11", "tipo12", "tipo13", "tipo14", "tipo15", "tipo16", "tipo17", "tipo18", "tipo19", "tipo20", "tipo21", "tipo22", "tipo23", "tipo24", "tipo25", "report36", "report38", "report40", "report42", "report44", "report45", "TVAC", "TVACO", "Tipoar", "FC10092", "FC10093", "Tipo 25 (DMC10025)", "tipo27", "Tipo28", "tipo29", "tipo30", "tipo31", "tipo32", "tipo33", "TIPO 41", "Tipo 42", "Tipo 43", "Tipo44", "Tipo45"})
+        Me.ListBox2.Items.AddRange(New Object() {"Ninguna", "Std", "tipo1", "tipo3", "tipo4", "tipo5", "tipo6", "tipo7", "tipo9", "tipo10", "tipo11", "tipo12", "tipo13", "tipo14", "tipo15", "tipo16", "tipo17", "tipo18", "tipo19", "tipo20", "tipo21", "tipo22", "tipo23", "tipo24", "tipo25", "report36", "report38", "report40", "report42", "report44", "report45", "TVAC", "TVACO", "Tipoar", "FC10092", "FC10093", "Tipo 25 (DMC10025)", "tipo27", "Tipo28", "tipo29", "tipo30", "tipo31", "tipo32", "tipo33", "TIPO 41", "Tipo 42", "Tipo 43", "Tipo44", "Tipo45", "Tipo 46"})
         Me.ListBox2.Location = New System.Drawing.Point(577, 556)
         Me.ListBox2.Name = "ListBox2"
         Me.ListBox2.ScrollAlwaysVisible = True
