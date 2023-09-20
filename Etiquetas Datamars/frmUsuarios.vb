@@ -47,8 +47,8 @@ Public Class frmUsuarios
             Next
 
         End If
+        panel.Controls.Add(listausuarios(listausuarios.Count - 1))
 
-        panel.Controls.Add(listaUsuarios(listaUsuarios.Count - 1))
     End Sub
 
 

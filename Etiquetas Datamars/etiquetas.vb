@@ -102,6 +102,10 @@
                     viewEtiqueta(0) = ruta & "DML1044.jpg"
                     viewEtiqueta(1) = anchoEtiq
                     viewEtiqueta(2) = altoEtiq
+                Case "Tipo 46"
+                    viewEtiqueta(0) = ruta & "DML1046.jpg"
+                    viewEtiqueta(1) = anchoEtiq
+                    viewEtiqueta(2) = altoEtiq
                 Case Else
                     viewEtiqueta(0) = ruta & "etiqueta_gen.jpg"
                     viewEtiqueta(1) = anchoEtiq
@@ -216,6 +220,10 @@
                     viewEtiqueta(2) = altoEtiq
                 Case "Tipo44"
                     viewEtiqueta(0) = ruta & "DMC10044.jpg"
+                    viewEtiqueta(1) = anchoEtiq
+                    viewEtiqueta(2) = altoEtiq
+                Case "Tipo 46"
+                    viewEtiqueta(0) = ruta & "DMC10046.jpg"
                     viewEtiqueta(1) = anchoEtiq
                     viewEtiqueta(2) = altoEtiq
                 Case Else
@@ -681,9 +689,11 @@
         ElseIf reporte = 1 Then
             'texto descripcion report42
             texto = "STANDARD IN BOX OF  " & (jerxLote * lotxCaja)
-        Else
+        ElseIf reporte = 2 Then
             'texto descripcion report45
             texto = "NEEDLE KIT IN BOX OF 100"
+        Else
+            texto = "STANDARD IN BOX OF 100"
         End If
         contBox = ((lastcode - Long.Parse(firstCode)) / (jerxLote * lotxCaja))
         label.SetNamedSubStringValue("barcode", numCaja)

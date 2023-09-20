@@ -2,7 +2,7 @@
 <xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
-      <DataSource DefaultConnectionIndex="7" FunctionsComponentName="qryInsertHistorico" GeneratorFunctionsComponentClassName="qryInsertHistorico" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="qryInsertHistorico" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="8" FunctionsComponentName="qryInsertHistorico" GeneratorFunctionsComponentClassName="qryInsertHistorico" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="qryInsertHistorico" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
           <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="PartesMicrochipConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PartesMicrochipConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Etiquetas_Datamars.My.MySettings.GlobalReference.Default.PartesMicrochipConnectionString" Provider="System.Data.SqlClient" />
           <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="MicrochipsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MicrochipsConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Etiquetas_Datamars.My.MySettings.GlobalReference.Default.MicrochipsConnectionString" Provider="System.Data.SqlClient" />
@@ -12,6 +12,7 @@
           <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="PartesMicrochipConnectionStringSRV3" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PartesMicrochipConnectionStringSRV3 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Etiquetas_Datamars.My.MySettings.GlobalReference.Default.PartesMicrochipConnectionStringSRV3" Provider="System.Data.SqlClient" />
           <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="PID_QueueConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PID_QueueConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Etiquetas_Datamars.My.MySettings.GlobalReference.Default.PID_QueueConnectionString" Provider="System.Data.SqlClient" />
           <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="PID_QueueConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PID_QueueConnectionString1 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Etiquetas_Datamars.My.MySettings.GlobalReference.Default.PID_QueueConnectionString1" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="PartesMicrochipConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PartesMicrochipConnectionString1 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Etiquetas_Datamars.My.MySettings.GlobalReference.Default.PartesMicrochipConnectionString1" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OrdenesGrabacionTableAdapter" GeneratorDataComponentClassName="OrdenesGrabacionTableAdapter" Name="OrdenesGrabacion" UserDataComponentName="OrdenesGrabacionTableAdapter">
@@ -493,64 +494,6 @@ SELECT Pedidos.ID, Pedidos.pedido, Pedidos.cliente, Pedidos.delegacion, Pedidos.
             </Mappings>
             <Sources />
           </TableAdapter>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="HistImpEtiqDM1TableAdapter" GeneratorDataComponentClassName="HistImpEtiqDM1TableAdapter" Name="HistImpEtiqDM1" UserDataComponentName="HistImpEtiqDM1TableAdapter">
-            <MainSource>
-              <DbSource ConnectionRef="PartesMicrochipConnectionString (MySettings)" DbObjectName="PartesMicrochip.dbo.HistImpEtiqDM" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
-                <DeleteCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>DELETE FROM [HistImpEtiqDM] WHERE (([CajaInicial] = @Original_CajaInicial) AND ([CantCaja] = @Original_CantCaja) AND ([IDhistorico] = @Original_IDhistorico) AND ([Nsemana] = @Original_Nsemana) AND ([Naño] = @Original_Naño))</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_CajaInicial" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CajaInicial" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_CantCaja" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CantCaja" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_IDhistorico" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IDhistorico" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Nsemana" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Nsemana" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Naño" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Naño" SourceColumnNullMapping="false" SourceVersion="Original" />
-                    </Parameters>
-                  </DbCommand>
-                </DeleteCommand>
-                <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT        CajaInicial, CantCaja, IDhistorico, Nsemana, Naño
-FROM            HistImpEtiqDM
-WHERE        (IDhistorico =
-                             (SELECT        MAX(IDhistorico) AS Expr1
-                               FROM            HistImpEtiqDM AS HistImpEtiqDM_1
-                               WHERE        (ReImpresion = 0) AND (Nsemana = @sem) AND (Naño = @año)))</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="false" AutogeneratedName="sem" ColumnName="Nsemana" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@sem" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Nsemana" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="año" ColumnName="Naño" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@año" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Naño" SourceColumnNullMapping="false" SourceVersion="Current" />
-                    </Parameters>
-                  </DbCommand>
-                </SelectCommand>
-                <UpdateCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>UPDATE [HistImpEtiqDM] SET [CajaInicial] = @CajaInicial, [CantCaja] = @CantCaja, [Nsemana] = @Nsemana, [Naño] = @Naño WHERE (([CajaInicial] = @Original_CajaInicial) AND ([CantCaja] = @Original_CantCaja) AND ([IDhistorico] = @Original_IDhistorico) AND ([Nsemana] = @Original_Nsemana) AND ([Naño] = @Original_Naño));
-SELECT CajaInicial, CantCaja, IDhistorico, Nsemana, Naño FROM HistImpEtiqDM WHERE (IDhistorico = @IDhistorico)</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@CajaInicial" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CajaInicial" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@CantCaja" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CantCaja" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Nsemana" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Nsemana" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Naño" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Naño" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_CajaInicial" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CajaInicial" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_CantCaja" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CantCaja" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_IDhistorico" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IDhistorico" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Nsemana" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Nsemana" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Naño" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Naño" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="IDhistorico" ColumnName="IDhistorico" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@IDhistorico" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="IDhistorico" SourceColumnNullMapping="false" SourceVersion="Current" />
-                    </Parameters>
-                  </DbCommand>
-                </UpdateCommand>
-              </DbSource>
-            </MainSource>
-            <Mappings>
-              <Mapping SourceColumn="CajaInicial" DataSetColumn="CajaInicial" />
-              <Mapping SourceColumn="CantCaja" DataSetColumn="CantCaja" />
-              <Mapping SourceColumn="IDhistorico" DataSetColumn="IDhistorico" />
-              <Mapping SourceColumn="Nsemana" DataSetColumn="Nsemana" />
-              <Mapping SourceColumn="Naño" DataSetColumn="Naño" />
-            </Mappings>
-            <Sources />
-          </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EMB_Chips1TableAdapter" GeneratorDataComponentClassName="EMB_Chips1TableAdapter" Name="EMB_Chips1" UserDataComponentName="EMB_Chips1TableAdapter">
             <MainSource>
               <DbSource ConnectionRef="grab_genericaSQLConnectionString (MySettings)" DbObjectName="grab_genericaSQL.dbo.EMB_Chips" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
@@ -844,6 +787,39 @@ FROM RefJeringas
 WHERE Ref = @Referencia</CommandText>
                 <Parameters>
                   <Parameter AllowDbNull="true" AutogeneratedName="Referencia" ColumnName="Ref" DataSourceName="PartesMicrochip.dbo.RefJeringas" DataTypeServer="nvarchar(255)" DbType="String" Direction="Input" ParameterName="@Referencia" Precision="0" ProviderType="NVarChar" Scale="0" Size="255" SourceColumn="Ref" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="PartesMicrochipConnectionString (MySettings)" DbObjectName="PartesMicrochip.dbo.uspInsertarHistoricoEtiquetasDM2" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="uspInsertarHistoricoEtiquetasDM2" MethodsParameterType="CLR" Modifier="Public" Name="uspInsertarHistoricoEtiquetasDM2" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy5" UserSourceName="uspInsertarHistoricoEtiquetasDM2">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.uspInsertarHistoricoEtiquetasDM2</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@IDpedido" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Nsemana" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Naño" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@CajaInit" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@CantCaja" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@CantLote" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@CantPalet" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bit" DbType="Boolean" Direction="Input" ParameterName="@EtLoteImp" Precision="1" ProviderType="Bit" Scale="0" Size="1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bit" DbType="Boolean" Direction="Input" ParameterName="@EtCajaImp" Precision="1" ProviderType="Bit" Scale="0" Size="1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bit" DbType="Boolean" Direction="Input" ParameterName="@EtPaletImp" Precision="1" ProviderType="Bit" Scale="0" Size="1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@TipoEtiLote" Precision="0" ProviderType="NVarChar" Scale="0" Size="15" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@TipoEtiCaja" Precision="0" ProviderType="NVarChar" Scale="0" Size="15" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@FecImpresion" Precision="23" ProviderType="DateTime" Scale="3" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@EquipoImp" Precision="0" ProviderType="NVarChar" Scale="0" Size="20" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@UserImp" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bit" DbType="Boolean" Direction="Input" ParameterName="@ReImpresion" Precision="1" ProviderType="Bit" Scale="0" Size="1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@fechafab" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@fechaCad" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bit" DbType="Boolean" Direction="Input" ParameterName="@extra2PC" Precision="1" ProviderType="Bit" Scale="0" Size="1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="decimal" DbType="Decimal" Direction="Input" ParameterName="@inicioRango" Precision="15" ProviderType="Decimal" Scale="0" Size="9" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="decimal" DbType="Decimal" Direction="Input" ParameterName="@finalRango" Precision="15" ProviderType="Decimal" Scale="0" Size="9" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="InputOutput" ParameterName="@Resultado" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="InputOutput" ParameterName="@IDhistorico" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
                 </Parameters>
               </DbCommand>
             </SelectCommand>
@@ -1193,17 +1169,6 @@ WHERE Ref = @Referencia</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="HistImpEtiqDM1" msprop:Generator_TableClassName="HistImpEtiqDM1DataTable" msprop:Generator_TableVarName="tableHistImpEtiqDM1" msprop:Generator_TablePropName="HistImpEtiqDM1" msprop:Generator_RowDeletingName="HistImpEtiqDM1RowDeleting" msprop:Generator_RowChangingName="HistImpEtiqDM1RowChanging" msprop:Generator_RowEvHandlerName="HistImpEtiqDM1RowChangeEventHandler" msprop:Generator_RowDeletedName="HistImpEtiqDM1RowDeleted" msprop:Generator_UserTableName="HistImpEtiqDM1" msprop:Generator_RowChangedName="HistImpEtiqDM1RowChanged" msprop:Generator_RowEvArgName="HistImpEtiqDM1RowChangeEvent" msprop:Generator_RowClassName="HistImpEtiqDM1Row">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="CajaInicial" msprop:Generator_ColumnVarNameInTable="columnCajaInicial" msprop:Generator_ColumnPropNameInRow="CajaInicial" msprop:Generator_ColumnPropNameInTable="CajaInicialColumn" msprop:Generator_UserColumnName="CajaInicial" type="xs:int" />
-              <xs:element name="CantCaja" msprop:Generator_ColumnVarNameInTable="columnCantCaja" msprop:Generator_ColumnPropNameInRow="CantCaja" msprop:Generator_ColumnPropNameInTable="CantCajaColumn" msprop:Generator_UserColumnName="CantCaja" type="xs:int" />
-              <xs:element name="IDhistorico" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnIDhistorico" msprop:Generator_ColumnPropNameInRow="IDhistorico" msprop:Generator_ColumnPropNameInTable="IDhistoricoColumn" msprop:Generator_UserColumnName="IDhistorico" type="xs:int" />
-              <xs:element name="Nsemana" msprop:Generator_ColumnVarNameInTable="columnNsemana" msprop:Generator_ColumnPropNameInRow="Nsemana" msprop:Generator_ColumnPropNameInTable="NsemanaColumn" msprop:Generator_UserColumnName="Nsemana" type="xs:int" />
-              <xs:element name="Naño" msprop:Generator_ColumnVarNameInTable="columnNaño" msprop:Generator_ColumnPropNameInRow="Naño" msprop:Generator_ColumnPropNameInTable="NañoColumn" msprop:Generator_UserColumnName="Naño" type="xs:int" />
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
         <xs:element name="EMB_Chips1" msprop:Generator_TableClassName="EMB_Chips1DataTable" msprop:Generator_TableVarName="tableEMB_Chips1" msprop:Generator_RowChangedName="EMB_Chips1RowChanged" msprop:Generator_TablePropName="EMB_Chips1" msprop:Generator_RowDeletingName="EMB_Chips1RowDeleting" msprop:Generator_RowChangingName="EMB_Chips1RowChanging" msprop:Generator_RowEvHandlerName="EMB_Chips1RowChangeEventHandler" msprop:Generator_RowDeletedName="EMB_Chips1RowDeleted" msprop:Generator_RowClassName="EMB_Chips1Row" msprop:Generator_UserTableName="EMB_Chips1" msprop:Generator_RowEvArgName="EMB_Chips1RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
@@ -1294,10 +1259,6 @@ WHERE Ref = @Referencia</CommandText>
     <xs:unique name="Pedidos_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:Pedidos" />
       <xs:field xpath="mstns:ID" />
-    </xs:unique>
-    <xs:unique name="HistImpEtiqDM1_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:HistImpEtiqDM1" />
-      <xs:field xpath="mstns:IDhistorico" />
     </xs:unique>
     <xs:unique name="EMB_Chips1_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:EMB_Chips1" />

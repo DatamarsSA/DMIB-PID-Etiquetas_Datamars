@@ -107,11 +107,6 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member>
-<member name="T:Etiquetas_Datamars.DataSet1.HistImpEtiqDM1DataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
 <member name="T:Etiquetas_Datamars.DataSet1.EMB_Chips1DataTable">
 <summary>
 Represents the strongly named DataTable class.
@@ -183,11 +178,6 @@ Represents strongly named DataRow class.
 </summary>
 </member>
 <member name="T:Etiquetas_Datamars.DataSet1.PedidosRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:Etiquetas_Datamars.DataSet1.HistImpEtiqDM1Row">
 <summary>
 Represents strongly named DataRow class.
 </summary>
@@ -267,11 +257,6 @@ Row event argument class
 Row event argument class
 </summary>
 </member>
-<member name="T:Etiquetas_Datamars.DataSet1.HistImpEtiqDM1RowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
 <member name="T:Etiquetas_Datamars.DataSet1.EMB_Chips1RowChangeEvent">
 <summary>
 Row event argument class
@@ -343,11 +328,6 @@ Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
 <member name="T:Etiquetas_Datamars.DataSet1TableAdapters.PedidosTableAdapter">
-<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member>
-<member name="T:Etiquetas_Datamars.DataSet1TableAdapters.HistImpEtiqDM1TableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
