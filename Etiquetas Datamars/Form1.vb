@@ -6,6 +6,7 @@
     Public etiManual, histGrabado, reImprimir, añadirDosPorCiento As Boolean
     'Public IDhistorico, CajaInicial, TotalCajas, totalLotes As Integer
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Cargar_Conexiones_SQL()
         If compBloqueo = False Then comprobarBloqueo()
         etiManual = False
         histGrabado = False
@@ -46,6 +47,19 @@
         cListImp.Text = INIRead(My.Application.Info.DirectoryPath & "\settings.ini", My.Computer.Name, "Impresora", ImpDefecto.PrinterName)
         'deshabilitamos la hibernación del equipo
         suspension.deshibernacion()
+    End Sub
+
+    Private Sub Cargar_Conexiones_SQL()
+
+        My.Settings.Item("PartesMicrochipConnectionString") = INIRead(My.Application.Info.DirectoryPath & "\settings.ini", "Conexion", "PartesMicrochip", "")
+        My.Settings.Item("MicrochipsConnectionString") = INIRead(My.Application.Info.DirectoryPath & "\settings.ini", "Conexion", "Microchips", "")
+        My.Settings.Item("OrdenesConnectionString") = INIRead(My.Application.Info.DirectoryPath & "\settings.ini", "Conexion", "Ordenes", "")
+        My.Settings.Item("grab_genericaSQLConnectionString") = INIRead(My.Application.Info.DirectoryPath & "\settings.ini", "Conexion", "grab_genericaSQL", "")
+        My.Settings.Item("PartesMicrochipConnectionStringSRV3") = INIRead(My.Application.Info.DirectoryPath & "\settings.ini", "Conexion", "PartesMicrochipSRV3", "")
+        My.Settings.Item("PID_QueueConnectionString") = INIRead(My.Application.Info.DirectoryPath & "\settings.ini", "Conexion", "PID_Queue", "")
+        My.Settings.Item("grab_genericaSQLConnectionString1") = INIRead(My.Application.Info.DirectoryPath & "\settings.ini", "Conexion", "grab_genericaSQLSRV3", "")
+
+
     End Sub
 
 #Region "Funciones y Procedimientos "

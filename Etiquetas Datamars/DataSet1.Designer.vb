@@ -12558,7 +12558,7 @@ Namespace DataSet1TableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.Etiquetas_Datamars.My.MySettings.Default.PID_QueueConnectionString1
+            Me._connection.ConnectionString = Global.Etiquetas_Datamars.My.MySettings.Default.PID_QueueConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -12791,7 +12791,7 @@ Namespace DataSet1TableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.Etiquetas_Datamars.My.MySettings.Default.PID_QueueConnectionString1
+            Me._connection.ConnectionString = Global.Etiquetas_Datamars.My.MySettings.Default.PID_QueueConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _

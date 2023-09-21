@@ -112,8 +112,8 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.16.16;Initial Catalog=Ordenes;Persist Security Info=True;User"& _ 
-            " ID=sa;Password=F3l1xc4n")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.16.16;Initial Catalog=PID_Queue;Persist Security Info=True;Us"& _ 
+            "er ID=sa;Password=F3l1xc4n")>  _
         Public ReadOnly Property PID_QueueConnectionString() As String
             Get
                 Return CType(Me("PID_QueueConnectionString"),String)
@@ -128,17 +128,6 @@ Namespace My
         Public ReadOnly Property grab_genericaSQLConnectionString1() As String
             Get
                 Return CType(Me("grab_genericaSQLConnectionString1"),String)
-            End Get
-        End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.16.16;Initial Catalog=PID_Queue;Persist Security Info=True;Us"& _ 
-            "er ID=sa;Password=F3l1xc4n")>  _
-        Public ReadOnly Property PID_QueueConnectionString1() As String
-            Get
-                Return CType(Me("PID_QueueConnectionString1"),String)
             End Get
         End Property
     End Class
