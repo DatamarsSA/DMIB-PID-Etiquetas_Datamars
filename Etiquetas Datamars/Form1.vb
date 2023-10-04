@@ -1490,11 +1490,15 @@
                     'Si el pedido es de Kyoritsu cambiamos el formato de la fecha de caducidad y ponemos el numero de esterilización.
 
 
-                    fecCaducidad = numMesCad.Value.ToString("00") & "/20" & numAñoCad.Value
+                    'fecCaducidad = numMesCad.Value.ToString("00") & "/20" & numAñoCad.Value
 
                     For i As Integer = 0 To (numCajas.Value) - 1
                         numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
-                        printCaja44()
+                        If ListBox2.SelectedItem = "Tipo45" Then
+                            printCaja45()
+                        Else
+                            printCaja44()
+                        End If
                         auxCaja += 1
                         'introducimos una espera para que la impresora reciba la etiqueta y no se alternen.
                         espera(0.2)

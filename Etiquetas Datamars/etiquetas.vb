@@ -899,6 +899,20 @@
 
 
     End Sub
+
+    Public Sub printCaja45()
+        'impresion de etiqueta report39 de lote tamaño 55mm x 40mm
+
+        label.SetNamedSubStringValue("numlote", numCaja)
+        label.SetNamedSubStringValue("description", descArticulo)
+        label.SetNamedSubStringValue("feccadu", fecCaducidad)
+        'se abre el programa Bartender y vemos como queda la etiqueta con los datos reales. QUITAR en programa definitivo.
+        'objbt.Visible = True
+        label.PrintOut(False, False)
+
+
+    End Sub
+
 #End Region
 
 End Module
