@@ -90,8 +90,8 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=SRVCHIP3;Initial Catalog=grab_genericaSQL;Persist Security Info=True;"& _ 
-            "User ID=sa;Password=F3l1xc4n")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.16.16;Initial Catalog=grab_genericaSQL;Persist Security Info="& _ 
+            "True;User ID=sa;Password=F3l1xc4n")>  _
         Public ReadOnly Property grab_genericaSQLConnectionString() As String
             Get
                 Return CType(Me("grab_genericaSQLConnectionString"),String)

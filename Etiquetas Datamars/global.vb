@@ -74,7 +74,7 @@
         'Dim fechaTmp As Date
         Dim fecvalida As Boolean = False
         If fecInicioReal = "" Then
-            fecPedido = BusFecPrCa2.GetData(idpedido)
+            fecPedido = BusFecPrCa.GetData(idpedido)
 
             'si el pedido es de la calle K no hace falta buscar la fecha caducidad del Chip lo calculamos.    
             ' fecPedido = BusFecPrCa.GetData(idpedido)

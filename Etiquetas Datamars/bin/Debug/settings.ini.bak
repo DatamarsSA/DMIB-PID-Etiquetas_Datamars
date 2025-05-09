@@ -4,7 +4,7 @@ Microchips=Data Source=es01-sv11;Initial Catalog=Microchips;Persist Security Inf
 Ordenes=Data Source=es01-sv11;Initial Catalog=Ordenes;Persist Security Info=True;User ID=sa;Password=F3l1xc4n
 grab_genericaSQL=Data Source=es01-sv11;Initial Catalog=grab_genericaSQL;Persist Security Info=True;User ID=sa;Password=F3l1xc4n
 PartesMicrochipSRV3=Data Source=srvchip3;Initial Catalog=PartesMicrochip;Persist Security Info=True;User ID=sa;Password=F3l1xc4n
-PID_Queue=Data Source=192.168.16.16;Initial Catalog=PID_Queue;Persist Security Info=True;User ID=sa;Password=F3l1xc4n
+PID_Queue=Data Source=es01-sv11;Initial Catalog=PID_Queue;Persist Security Info=True;User ID=sa;Password=F3l1xc4n
 grab_genericaSQLSRV3=Data Source=srvchip3;Initial Catalog=grab_genericaSQL;Persist Security Info=True;User ID=sa;Password=F3l1xc4n
 [PUERTOS]
 puerto_tectus="COM11"
@@ -35,4 +35,6 @@ Impresora=PRTPCT03
 [ES01-PC03]
 Impresora=Microsoft Print to PDF
 [ES01-PC02]
+Impresora=Adobe PDF
+[ES-ALB-002]
 Impresora=Adobe PDF

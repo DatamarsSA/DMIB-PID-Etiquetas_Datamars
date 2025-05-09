@@ -22,8 +22,12 @@
                     viewEtiqueta(0) = ruta & "DML1003.jpg"
                     viewEtiqueta(1) = anchoEtiq
                     viewEtiqueta(2) = altoEtiq
-                Case "Tipo 26"
+                Case "Tipo 26", "Tipo48"
                     viewEtiqueta(0) = ruta & "DML1026.jpg"
+                    viewEtiqueta(1) = anchoEtiq
+                    viewEtiqueta(2) = altoEtiq
+                Case "Tipo 26B"
+                    viewEtiqueta(0) = ruta & "DML1026B.jpg"
                     viewEtiqueta(1) = anchoEtiq
                     viewEtiqueta(2) = altoEtiq
                 Case "tipo5"
@@ -104,6 +108,10 @@
                     viewEtiqueta(2) = altoEtiq
                 Case "Tipo 46"
                     viewEtiqueta(0) = ruta & "DML1046.jpg"
+                    viewEtiqueta(1) = anchoEtiq
+                    viewEtiqueta(2) = altoEtiq
+                Case "Tipo 47"
+                    viewEtiqueta(0) = ruta & "DML1047.jpg"
                     viewEtiqueta(1) = anchoEtiq
                     viewEtiqueta(2) = altoEtiq
                 Case Else
@@ -226,6 +234,10 @@
                     viewEtiqueta(0) = ruta & "DMC10046.jpg"
                     viewEtiqueta(1) = anchoEtiq
                     viewEtiqueta(2) = altoEtiq
+                Case "Tipo 47"
+                    viewEtiqueta(0) = ruta & "DMC10047.jpg"
+                    viewEtiqueta(1) = anchoEtiq
+                    viewEtiqueta(2) = altoEtiq
                 Case Else
                     viewEtiqueta(0) = ruta & "etiqueta_gen.jpg"
                     viewEtiqueta(1) = anchoEtiq
@@ -233,7 +245,7 @@
 
             End Select
         Else
-            viewEtiqueta(0) = ruta & "label_palet.jpg"
+            viewEtiqueta(0) = ruta & "label_palet_nuevo.jpg"
             viewEtiqueta(1) = anchoEtiq
             viewEtiqueta(2) = altoEtiq
         End If
@@ -427,6 +439,16 @@
         'objbt.Visible = True
         label.PrintOut(False, False)
 
+
+    End Sub
+
+    Public Sub printTipo26B()
+
+        label.SetNamedSubStringValue("numlote", numLote)
+        label.SetNamedSubStringValue("feccadu", fecCaducidad)
+        'se abre el programa Bartender y vemos como queda la etiqueta con los datos reales. QUITAR en programa definitivo.
+        'objbt.Visible = True
+        label.PrintOut(False, False)
 
     End Sub
 
@@ -786,6 +808,15 @@
         label.PrintOut(False, False)
         'objbt.Visible = True
 
+    End Sub
+
+    Public Sub printEtiPalet_Nueva(pedsap As String, npalet As Integer, ByVal cliente As String)
+
+        label.SetNamedSubStringValue("numsap", pedsap)
+        label.SetNamedSubStringValue("numpalet", npalet)
+        label.SetNamedSubStringValue("cliente", cliente)
+        label.PrintOut(False, False)
+        'objbt.Visible = True
 
     End Sub
 

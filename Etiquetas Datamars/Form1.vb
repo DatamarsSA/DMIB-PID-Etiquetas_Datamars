@@ -79,6 +79,9 @@
         cmdImprimirCajas.Enabled = True
         cmdImpManual.Enabled = True
         cmdImprimirPalets.Enabled = True
+        btn_MuestraLotes.Enabled = True
+        btn_Muestra_Cajas.Enabled = True
+        btn_Muestra_Palets.Enabled = True
     End Sub
     Private Function cargarPedido() As Boolean
         'procedimiento de busqueda de Pedido en la BBDD.
@@ -419,16 +422,20 @@
 
 #End Region
 
-    Private Sub cmdImprimirLotes_Click(sender As Object, e As EventArgs) Handles cmdImprimirLotes.Click
-        'ImprimirLotes()
+    Private Sub Imprimir_Lotes(ByVal num_lotes As Integer, ByVal muestra As Boolean)
+
         Dim i, l, contador, respuesta As Integer
         Dim grabBBDDok As Boolean
         cmdImprimirLotes.Enabled = False
-        If histGrabado = False Then
-            grabBBDDok = grabarHistorico("insertar")
-            histGrabado = True
+        If muestra Then
+            grabBBDDok = True
         Else
-            grabBBDDok = grabarHistorico("actualizar")
+            If histGrabado = False Then
+                grabBBDDok = grabarHistorico("insertar")
+                histGrabado = True
+            Else
+                grabBBDDok = grabarHistorico("actualizar")
+            End If
         End If
         If grabBBDDok = True Then
 
@@ -451,7 +458,7 @@
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
 
-                    For i = empezarXlote To (numLotes.Value + l) - 1
+                    For i = empezarXlote To (num_lotes + l) - 1
                         numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
                         printLoteStandart()
                         loteinicial += 1
@@ -479,7 +486,7 @@
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
 
-                    For i = empezarXlote To (numLotes.Value + l) - 1
+                    For i = empezarXlote To (num_lotes + l) - 1
                         numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
                         printLoteTipo27()
                         loteinicial += 1
@@ -507,7 +514,7 @@
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
 
-                    For i = empezarXlote To (numLotes.Value + l) - 1
+                    For i = empezarXlote To (num_lotes + l) - 1
                         numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
                         printLoteStandart()
                         loteinicial += 1
@@ -525,6 +532,88 @@
                     Next
                     'cerramos para liberar espacio
                     label.Close(BarTender.BtSaveOptions.btDoNotSaveChanges)
+                Case "Tipo48"
+                    fecCaducidad = "EXP. 20" & numAñoCad.Value & "-" & numMesCad.Value.ToString("00")
+                    contador = 1
+                    'abrimos la etiqueta bartender
+                    ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "LOTE", "ruta_lote")
+                    'Creamos objeto Etiqueta para el BarTender
+                    label = objbt.Formats.Open(ruta & "DML1026.btw")
+                    etImpConf = label.PrintSetup
+                    etImpConf.Printer = cListImp.Text
+
+                    For i = empezarXlote To (num_lotes + l) - 1
+                        numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
+                        printLoteStandart()
+                        loteinicial += 1
+                        If loteinicial = (lotxCaja + 1) Then
+                            loteinicial = 1
+                            auxcaja += 1
+                        End If
+                        'introducimos una espera para que la impresora reciba la etiqueta y no se alternen.
+                        espera(0.2)
+                    Next
+                    MsgBox("Se va a imprimir el otro tipo de pegatina, cambie el rollo de etiquetas")
+                    label = objbt.Formats.Open(ruta & "DML_CCA.btw")
+                    fecCaducidad = "" & numMesCad.Value.ToString("00") & "/20" & numAñoCad.Value.ToString("00")
+                    etImpConf = label.PrintSetup
+                    etImpConf.Printer = cListImp.Text
+
+                    For i = empezarXlote To (num_lotes + l) - 1
+                        numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
+                        printTipo26B()
+                        loteinicial += 1
+                        If loteinicial = (lotxCaja + 1) Then
+                            loteinicial = 1
+                            auxcaja += 1
+                        End If
+                        'introducimos una espera para que la impresora reciba la etiqueta y no se alternen.
+                        espera(0.2)
+                    Next
+
+                    'cerramos para liberar espacio
+                    label.Close(BarTender.BtSaveOptions.btDoNotSaveChanges)
+                Case "Tipo 26B"
+                    fecCaducidad = "EXP. 20" & numAñoCad.Value & "-" & numMesCad.Value.ToString("00")
+                    contador = 1
+                    'abrimos la etiqueta bartender
+                    ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "LOTE", "ruta_lote")
+                    'Creamos objeto Etiqueta para el BarTender
+                    label = objbt.Formats.Open(ruta & "DML1026.btw")
+                    etImpConf = label.PrintSetup
+                    etImpConf.Printer = cListImp.Text
+
+                    For i = empezarXlote To (num_lotes + l) - 1
+                        numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
+                        printLoteStandart()
+                        loteinicial += 1
+                        If loteinicial = (lotxCaja + 1) Then
+                            loteinicial = 1
+                            auxcaja += 1
+                        End If
+                        'introducimos una espera para que la impresora reciba la etiqueta y no se alternen.
+                        espera(0.2)
+                    Next
+                    MsgBox("Se va a imprimir el otro tipo de pegatina, cambie el rollo de etiquetas")
+                    label = objbt.Formats.Open(ruta & "DML1026B.btw")
+                    fecCaducidad = "" & numMesCad.Value.ToString("00") & "/20" & numAñoCad.Value.ToString("00")
+                    etImpConf = label.PrintSetup
+                    etImpConf.Printer = cListImp.Text
+
+                    For i = empezarXlote To (num_lotes + l) - 1
+                        numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
+                        printTipo26B()
+                        loteinicial += 1
+                        If loteinicial = (lotxCaja + 1) Then
+                            loteinicial = 1
+                            auxcaja += 1
+                        End If
+                        'introducimos una espera para que la impresora reciba la etiqueta y no se alternen.
+                        espera(0.2)
+                    Next
+
+                    'cerramos para liberar espacio
+                    label.Close(BarTender.BtSaveOptions.btDoNotSaveChanges)
                 Case "tipo3"
                     fecCaducidad = "01/" & numMesCad.Value.ToString("00") & "/" & "20" & numAñoCad.Value
                     ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "LOTE", "ruta_lote")
@@ -532,7 +621,7 @@
                     label = objbt.Formats.Open(ruta & "DML1003.btw")
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
-                    For i = empezarXlote To (numLotes.Value + l) - 1
+                    For i = empezarXlote To (num_lotes + l) - 1
                         numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
                         printLoteTipo3()
                         loteinicial += 1
@@ -555,7 +644,7 @@
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
 
-                    For i = empezarXlote To (numLotes.Value + l) - 1
+                    For i = empezarXlote To (num_lotes + l) - 1
                         numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
                         printLoteTipo5()
                         loteinicial += 1
@@ -581,7 +670,7 @@
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
 
-                    For i = empezarXlote To (numLotes.Value + l) - 1
+                    For i = empezarXlote To (num_lotes + l) - 1
                         numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
                         printLoteTipo7()
                         loteinicial += 1
@@ -602,7 +691,7 @@
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
 
-                    For i = empezarXlote To (numLotes.Value + l) - 1
+                    For i = empezarXlote To (num_lotes + l) - 1
                         numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
                         printLoteTipo9()
                         loteinicial += 1
@@ -632,7 +721,7 @@
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
 
-                    For i = empezarXlote To (numLotes.Value + empezarXlote) - 1
+                    For i = empezarXlote To (num_lotes + empezarXlote) - 1
                         numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
                         printLoteTipo13()
                         loteinicial += 1
@@ -652,7 +741,7 @@
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
 
-                    For i = empezarXlote To (numLotes.Value + empezarXlote) - 1
+                    For i = empezarXlote To (num_lotes + empezarXlote) - 1
                         numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
                         printLoteTipo15()
                         loteinicial += 1
@@ -674,7 +763,7 @@
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
 
-                    For i = empezarXlote To (numLotes.Value + empezarXlote) - 1
+                    For i = empezarXlote To (num_lotes + empezarXlote) - 1
                         numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
                         printReport35()
                         loteinicial += 1
@@ -695,7 +784,7 @@
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
 
-                    For i = empezarXlote To (numLotes.Value + empezarXlote) - 1
+                    For i = empezarXlote To (num_lotes + empezarXlote) - 1
                         numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
                         printReport37()
                         loteinicial += 1
@@ -738,9 +827,9 @@
                             MessageBox.Show("Formato de Certificado Incorrecto, Por Favor Compruebelo", "Certificado Esterilización", MessageBoxButtons.OK, MessageBoxIcon.Information)
                             Exit Sub
                         End If
+                    Else
+                        numPedido = txtNumPedido.Text
                     End If
-
-                    'Creamos el objeto etiqueta
 
                     If txtRefProducto.Text.Trim = "992 4001-JPN" Then
                         label = objbt.Formats.Open(ruta & "DML1028.btw")
@@ -751,7 +840,7 @@
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
 
-                    For i = empezarXlote To (numLotes.Value + empezarXlote) - 1
+                    For i = empezarXlote To (num_lotes + empezarXlote) - 1
                         numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
 
                         If txtRefProducto.Text.Trim = "992 4001-JPN" Then
@@ -759,7 +848,6 @@
                         Else
                             printReport39()
                         End If
-
 
                         loteinicial += 1
                         If loteinicial = (lotxCaja + 1) Then
@@ -816,7 +904,7 @@
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
 
-                    For i = empezarXlote To (numLotes.Value + empezarXlote) - 1
+                    For i = empezarXlote To (num_lotes + empezarXlote) - 1
                         numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
 
                         printLote44()
@@ -849,7 +937,7 @@
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
 
-                    For i = empezarXlote To (numLotes.Value + l) - 1
+                    For i = empezarXlote To (num_lotes + l) - 1
                         numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
                         printLoteTVA()
                         loteinicial += 1
@@ -861,7 +949,7 @@
                         espera(0.2)
                     Next
                     label.Close(BarTender.BtSaveOptions.btDoNotSaveChanges)
-                Case "TVALO", "FL1100", "FL1103", "tipo19", "tipo24", "TIPO 41", "Tipo 46"
+                Case "TVALO", "FL1100", "FL1103", "tipo19", "tipo24", "TIPO 41", "Tipo 46", "Tipo 47"
                     'Etiquetas especificas TVA Lote Ordenado.
                     If ListBox1.SelectedItem = "Tipo 46" Then
                         fecCaducidad = "20" & numAñoCad.Value & "-" & numMesCad.Value.ToString("00")
@@ -880,11 +968,12 @@
                         If ListBox1.SelectedItem = "tipo24" Then label = objbt.Formats.Open(ruta & "DML1024.btw")
                         If ListBox1.SelectedItem = "TIPO 41" Then label = objbt.Formats.Open(ruta & "DML1041.btw")
                         If ListBox1.SelectedItem = "Tipo 46" Then label = objbt.Formats.Open(ruta & "DML1046.btw")
+                        If ListBox1.SelectedItem = "Tipo 47" Then label = objbt.Formats.Open(ruta & "DML1047.btw")
                     End If
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
 
-                    For i = empezarXlote To (numLotes.Value + empezarXlote) - 1
+                    For i = empezarXlote To (num_lotes + empezarXlote) - 1
                         numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
                         printLoteTVAO()
                         loteinicial += 1
@@ -909,7 +998,7 @@
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
 
-                    For i = empezarXlote To (numLotes.Value + empezarXlote) - 1
+                    For i = empezarXlote To (num_lotes + empezarXlote) - 1
                         numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
                         printLoteTipo43()
                         loteinicial += 1
@@ -934,7 +1023,7 @@
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
 
-                    For i = empezarXlote To (numLotes.Value + empezarXlote) - 1
+                    For i = empezarXlote To (num_lotes + empezarXlote) - 1
                         numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
                         If ListBox2.SelectedItem = "tipo33" Then
                             printLoteTVAO(False)
@@ -958,32 +1047,36 @@
             histGrabado = False
         End If
         cmdImprimirLotes.Enabled = True
+
     End Sub
 
-    Private Sub cmdImprimirCajas_Click(sender As Object, e As EventArgs) Handles cmdImprimirCajas.Click
-        'ImprimirCajas()
+    Private Sub Imprimir_Cajas(ByVal num_lotes As Integer, ByVal num_cajas As Integer, ByVal muestra As Boolean)
+
         Dim grabBBDDok As Boolean
         Dim auxCaja As Integer = Integer.Parse(empezarXCaja) '(txtCaja.Value) se cambia el valor de la caja de texto por la variable
         firstCode = txtGlobalFirstCode.Text.Trim
         tempFirtCode = txtGlobalFirstCode.Text.Trim
         'Bloqueamos el boton para que no se pueda volver a imprimir.
         cmdImprimirCajas.Enabled = False
-        If histGrabado = False Then
-            grabBBDDok = grabarHistorico("insertar")
-            histGrabado = True
+        If muestra Then
+            grabBBDDok = True
         Else
-            grabBBDDok = grabarHistorico("actualizar")
+            If histGrabado = False Then
+                grabBBDDok = grabarHistorico("insertar")
+                histGrabado = True
+            Else
+                grabBBDDok = grabarHistorico("actualizar")
+            End If
         End If
+
         If grabBBDDok = True Then
-
-
             Select Case ListBox2.SelectedItem
                 Case "Std"
                     ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "CAJA", "ruta_caja")
                     label = objbt.Formats.Open(ruta & "DMC_standart.btw")
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
-                    For i As Integer = 0 To (numCajas.Value) - 1
+                    For i As Integer = 0 To (num_cajas) - 1
                         numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
                         printCajaStandart()
                         auxCaja += 1
@@ -997,7 +1090,7 @@
                     label = objbt.Formats.Open(ruta & "DMC10003.btw")
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
-                    For i As Integer = 0 To (numCajas.Value) - 1
+                    For i As Integer = 0 To (num_cajas) - 1
                         numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
                         printCajaTipo3()
                         auxCaja += 1
@@ -1039,7 +1132,7 @@
                             fecsealing = Strings.Right(fecPedFab, 2) & "-" & Mid(fecPedFab, 5, 2) & "-" & Strings.Left(fecPedFab, 4)
                         End If
 
-                        For i As Integer = 0 To (numCajas.Value) - 1
+                        For i As Integer = 0 To (num_cajas) - 1
                             numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "9" & auxCaja.ToString("0000")
                             printCajaTipo4()
                             auxCaja += 1
@@ -1064,7 +1157,7 @@
                             etImpConf.Printer = cListImp.Text
                             'ponemos el contador de cajas al valor de cajas iniciales, para que no sume. si no que imprima desde el valor inicial.
                             auxCaja = Integer.Parse(empezarXCaja) '(txtCaja.Value)
-                            For i As Integer = 0 To (numCajas.Value) - 1
+                            For i As Integer = 0 To (num_cajas) - 1
                                 numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
                                 printCajaStandart()
                                 auxCaja += 1
@@ -1083,7 +1176,7 @@
                             fecCaducidad = "EXP.: 20" & numAñoCad.Value & "-" & numMesCad.Value.ToString("00")
                             'ponemos el contador de cajas al valor de cajas iniciales, para que no sume. si no que imprima desde el valor inicial.
                             auxCaja = Integer.Parse(empezarXCaja) '(txtCaja.Value)
-                            For i As Integer = 0 To (numCajas.Value) - 1
+                            For i As Integer = 0 To (num_cajas) - 1
                                 numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
                                 printCajaTipo1()
                                 auxCaja += 1
@@ -1099,7 +1192,7 @@
                     label = objbt.Formats.Open(ruta & "DMC10005.btw")
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
-                    For i As Integer = 0 To (numCajas.Value) - 1
+                    For i As Integer = 0 To (num_cajas) - 1
                         numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
                         printCajaTipo5()
                         auxCaja += 1
@@ -1124,7 +1217,7 @@
                         label = objbt.Formats.Open(ruta & "DMC10009.btw")
                         etImpConf = label.PrintSetup
                         etImpConf.Printer = cListImp.Text
-                        For i As Integer = 0 To (numCajas.Value) - 1
+                        For i As Integer = 0 To (num_cajas) - 1
                             numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
                             printCajaTipo9()
                             auxCaja += 1
@@ -1149,7 +1242,7 @@
                         etImpConf.Printer = cListImp.Text
                         'ponemos el contador de cajas al valor de cajas iniciales, para que no sume. si no que imprima desde el valor inicial.
                         auxCaja = Integer.Parse(empezarXCaja) '(txtCaja.Value)
-                        For i As Integer = 0 To (numCajas.Value) - 1
+                        For i As Integer = 0 To (num_cajas) - 1
                             numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
                             printCajaStandart()
                             auxCaja += 1
@@ -1175,7 +1268,7 @@
                         etImpConf = label.PrintSetup
                         etImpConf.Printer = cListImp.Text
                         'refCliente = "5010605008023"
-                        For i As Integer = 0 To (numCajas.Value) - 1
+                        For i As Integer = 0 To (num_cajas) - 1
                             numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
                             printCajaTipo10()
                             auxCaja += 1
@@ -1200,7 +1293,7 @@
                         etImpConf.Printer = cListImp.Text
                         'ponemos el contador de cajas al valor de cajas iniciales, para que no sume. si no que imprima desde el valor inicial.
                         auxCaja = Integer.Parse(empezarXCaja) '(txtCaja.Value)
-                        For i As Integer = 0 To (numCajas.Value) - 1
+                        For i As Integer = 0 To (num_cajas) - 1
                             numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
                             printCajaStandart()
                             auxCaja += 1
@@ -1215,7 +1308,7 @@
                     label = objbt.Formats.Open(ruta & "DMC10011.btw")
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
-                    For i As Integer = 0 To (numCajas.Value) - 1
+                    For i As Integer = 0 To (num_cajas) - 1
                         numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
                         printCajaTipo11()
                         auxCaja += 1
@@ -1239,7 +1332,7 @@
                         label = objbt.Formats.Open(ruta & "DMC10012.btw")
                         etImpConf = label.PrintSetup
                         etImpConf.Printer = cListImp.Text
-                        For i As Integer = 0 To (numCajas.Value) - 1
+                        For i As Integer = 0 To (num_cajas) - 1
                             numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
                             printCajaTipo12()
                             auxCaja += 1
@@ -1273,7 +1366,7 @@
                         etImpConf.Printer = cListImp.Text
                         'ponemos el contador de cajas al valor de cajas iniciales, para que no sume. si no que imprima desde el valor inicial.
                         auxCaja = Integer.Parse(empezarXCaja) '(txtCaja.Value)
-                        For i As Integer = 0 To (numCajas.Value) - 1
+                        For i As Integer = 0 To (num_cajas) - 1
                             numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
                             If ListBox2.SelectedItem = "tipo12" Then
                                 mostrarEtiqCaja("Std")
@@ -1296,7 +1389,7 @@
                     label = objbt.Formats.Open(ruta & "DMC10013.btw")
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
-                    For i As Integer = 0 To (numCajas.Value) - 1
+                    For i As Integer = 0 To (num_cajas) - 1
                         numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
                         printCajaTipo13()
                         auxCaja += 1
@@ -1318,7 +1411,7 @@
                     End If
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
-                    For i As Integer = 0 To (numCajas.Value) - 1
+                    For i As Integer = 0 To (num_cajas) - 1
                         numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
                         printcajaTipo14()
                         auxCaja += 1
@@ -1326,6 +1419,59 @@
                         espera(0.2)
                     Next
                     label.Close(BarTender.BtSaveOptions.btDoNotSaveChanges)
+                Case "Tipo48"
+                    Dim respuesta As Integer
+                    'Se imprimen Primero las etiquetas del Tipo 9
+                    If reImprimir = True And etiManual = True Then
+                        respuesta = MsgBox("Tiene 2 tipos de Etiquetas. Estas son las Etiquetas 80mmX80mm. ¿Necesitas Imprimirlas?", vbYesNo, "REIMPRESION DE ETIQUETAS")
+                    Else
+                        respuesta = 6
+
+                    End If
+                    If respuesta = 6 Then
+                        MsgBox("Tiene 2 tipos de Etiquetas. Estas son las Etiquetas 80mmX80mm, Cambie las etiquetas en la impresora Referencia BOM:600 0200-053", MsgBoxStyle.Information)
+                        fecCaducidad = "EXP. 20" & (numAñoCad.Value) & "-" & numMesCad.Value.ToString("00") 'quitar el 2 es temporal
+                        ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "CAJA", "ruta_caja")
+                        label = objbt.Formats.Open(ruta & "DMC10022.btw")
+                        etImpConf = label.PrintSetup
+                        etImpConf.Printer = cListImp.Text
+                        For i As Integer = 0 To (num_cajas) - 1
+                            numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
+                            printCajaTipo14()
+                            auxCaja += 1
+                            'introducimos una espera para que la impresora reciba la etiqueta y no se alternen.
+                            espera(0.2)
+                        Next
+                        label.Close(BarTender.BtSaveOptions.btDoNotSaveChanges)
+                    End If
+
+                    If reImprimir = True And etiManual = True Then
+                        respuesta = MsgBox("Se van a imprimir las segundas Etiquetas de este Pedido de 60mmX47mm.¿Necesita Reimprimirlas?", vbYesNo, "REIMPRESION DE ETIQUETAS")
+                    Else
+                        respuesta = 6
+                    End If
+                    If respuesta = 6 Then
+                        'se tiene que realizar el cambio de las etiquetas
+                        MsgBox("!Se van a Imprimir las Etiquetas de 60x47mm¡, Cambie las etiquetas en la impresora Referencia BOM:600 0200-050", MsgBoxStyle.Information)
+                        mostrarEtiqCaja("Std")
+                        ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "CAJA", "ruta_caja")
+                        label = objbt.Formats.Open(ruta & "DMC_standart.btw")
+                        etImpConf = label.PrintSetup
+                        etImpConf.Printer = cListImp.Text
+                        'ponemos el contador de cajas al valor de cajas iniciales, para que no sume. si no que imprima desde el valor inicial.
+                        auxCaja = Integer.Parse(empezarXCaja) '(txtCaja.Value)
+                        For i As Integer = 0 To (num_cajas) - 1
+                            numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
+                            mostrarEtiqCaja("Std")
+                            label = objbt.Formats.Open(ruta & "DMC_standart.btw")
+                            printCajaStandart()
+                            auxCaja += 1
+                            'introducimos una espera para que la impresora reciba la etiqueta y no se alternen.
+                            espera(0.2)
+                        Next
+                        label.Close(BarTender.BtSaveOptions.btDoNotSaveChanges)
+                    End If
+
                 Case "tipo15"
                     MsgBox("Este cliente Se imprimen 2 Etiquetas de Diferentes Tamaños. Las Primeras de 60x47mm y Las segundas de 80x80mm_
                         _ Asegurese de tener las etiquetas correctas", MsgBoxStyle.Information)
@@ -1333,7 +1479,7 @@
                     label = objbt.Formats.Open(ruta & "DMC10015.btw")
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
-                    For i As Integer = 0 To (numCajas.Value) - 1
+                    For i As Integer = 0 To (num_cajas) - 1
                         numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
                         printCajaTipo15()
                         auxCaja += 1
@@ -1351,7 +1497,7 @@
                     etImpConf.Printer = cListImp.Text
                     'Inicializamos el valor de la variable de caja para que se impriman las mismas cajas.
                     auxCaja = Integer.Parse(empezarXCaja) '(txtCaja.Value)
-                    For i As Integer = 0 To (numCajas.Value) - 1
+                    For i As Integer = 0 To (num_cajas) - 1
                         numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
                         printCajaTipo12()
                         auxCaja += 1
@@ -1365,13 +1511,13 @@
                     'si la etiqueta es manual y numero de caja no es 1 se tiene que calcula el chip inicial de caja
                     If etiManual = True Then calcularChipInicial(1)
                     'asignamos la cantidad de lotes a una variable temporal.
-                    numLoteTmp = numLotes.Value
+                    numLoteTmp = num_lotes
                     'lotxCaja = numLotesPorCaja.Value
                     ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "CAJA", "ruta_caja")
                     label = objbt.Formats.Open(ruta & "DMC10036.btw")
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
-                    For i As Integer = 0 To (numCajas.Value) - 1
+                    For i As Integer = 0 To (num_cajas) - 1
                         numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
                         If (jerxLote * lotxCaja) > (jerxLote * ((numLoteTmp + empezarXlote) - 1)) Then lotxCaja = ((numLoteTmp + empezarXlote) - 1)
                         'restamos a la variable de lotes temporales la cantidad de lotes por caja. Esto se hace por si la ultima caja hay menos lotes que los reglamentarios.
@@ -1398,7 +1544,7 @@
                     'si la etiqueta es manual y numero de caja no es 1 se tiene que calcula el chip inicial de caja
                     If etiManual = True Then calcularChipInicial(1) 'AndAlso empezarXCaja <> 1
                     'asignamos la cantidad de lotes a una variable temporal.
-                    numLoteTmp = numLotes.Value
+                    numLoteTmp = num_lotes
                     If fecPedFab.Contains("/") Then
                         fecLotImp = Strings.Right(fecPedFab, 4) & "-" & Mid(fecPedFab, 4, 2) & "-" & Strings.Left(fecPedFab, 2)
                     Else
@@ -1412,7 +1558,7 @@
                     'Para sacar el numero de caja actual de la cantidad total restamos la caja inicial por la variable empezarXcaja.
                     'Inicializamos el contador fuera del bucle
                     contador = (empezarXCaja - txtCaja.Value) + 1
-                    For i As Integer = 0 To (numCajas.Value) - 1
+                    For i As Integer = 0 To (num_cajas) - 1
 
                         numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
                         If (jerxLote * lotxCaja) > (jerxLote * ((numLoteTmp + empezarXlote) - 1)) Then lotxCaja = ((numLoteTmp + empezarXlote) - 1)
@@ -1458,10 +1604,10 @@
                             MessageBox.Show("Formato de Certificado Incorrecto, Por Favor Compruebelo", "Certificado Esterilización", MessageBoxButtons.OK, MessageBoxIcon.Information)
                             Exit Sub
                         End If
-
+                    Else
+                        numPedido = txtNumPedido.Text
                     End If
-
-                    For i As Integer = 0 To (numCajas.Value) - 1
+                    For i As Integer = 0 To (num_cajas) - 1
                         numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
                         If txtRefProducto.Text.Trim = "992 4001-JPN" Then
                             Dim cantidad As Integer = numLotesPorCaja.Value * numUnidadesPorlote.Value
@@ -1477,12 +1623,14 @@
 
 
                 Case "Tipo44", "Tipo45"
-                    fecCaducidad = "EXP. 20" & numAñoCad.Value & "-" & numMesCad.Value.ToString("00")
+
                     ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "CAJA", "ruta_caja")
                     If ListBox2.SelectedItem = "Tipo45" Then
                         label = objbt.Formats.Open(ruta & "DMC10045.btw")
+                        fecCaducidad = "EXP. 20" & numAñoCad.Value & "-" & numMesCad.Value.ToString("00")
                     Else
                         label = objbt.Formats.Open(ruta & "DMC10044.btw")
+                        fecCaducidad = numMesCad.Value.ToString("00") & "/20" & numAñoCad.Value
                     End If
 
                     etImpConf = label.PrintSetup
@@ -1492,7 +1640,7 @@
 
                     'fecCaducidad = numMesCad.Value.ToString("00") & "/20" & numAñoCad.Value
 
-                    For i As Integer = 0 To (numCajas.Value) - 1
+                    For i As Integer = 0 To (num_cajas) - 1
                         numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
                         If ListBox2.SelectedItem = "Tipo45" Then
                             printCaja45()
@@ -1519,9 +1667,9 @@
                             textoEti = "BOX OF TEN"
 
                     End Select
-                    For i As Integer = 0 To (numCajas.Value) - 1
+                    For i As Integer = 0 To (num_cajas) - 1
                         numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
-                        printCajaAr(contador, txtnumsap.Text.Trim, textoEti, numCajas.Value)
+                        printCajaAr(contador, txtnumsap.Text.Trim, textoEti, num_cajas)
                         contador += 1
                         auxCaja += 1
                         'introducimos una espera para que la impresora reciba la etiqueta y no se alternen.
@@ -1548,7 +1696,7 @@
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
                     'label = objbt.Formats.Open("C:\etiquetas\FC10088_CajaDM.btw")
-                    For i As Integer = 0 To (numCajas.Value) - 1
+                    For i As Integer = 0 To (num_cajas) - 1
                         numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
                         printCajaTVA()
                         auxCaja += 1
@@ -1576,8 +1724,8 @@
                     'si la etiqueta es manual y numero de caja no es 1 se tiene que calcula el chip inicial de caja
                     If etiManual = True Then calcularChipInicial(1)
                     'asignamos la cantidad de lotes a una variable temporal.
-                    numLoteTmp = numLotes.Value
-                    For i As Integer = 0 To (numCajas.Value) - 1
+                    numLoteTmp = num_lotes
+                    For i As Integer = 0 To (num_cajas) - 1
                         numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
                         If (jerxLote * lotxCaja) > (jerxLote * ((numLoteTmp + empezarXlote) - 1)) Then lotxCaja = ((numLoteTmp + empezarXlote) - 1)
                         'restamos a la variable de lotes temporales la cantidad de lotes por caja. Esto se hace por si la ultima caja hay menos lotes que los reglamentarios.
@@ -1602,8 +1750,8 @@
                     'si la etiqueta es manual y numero de caja no es 1 se tiene que calcula el chip inicial de caja
                     If etiManual = True Then calcularChipInicial(1)
                     'asignamos la cantidad de lotes a una variable temporal.
-                    numLoteTmp = numLotes.Value
-                    For i As Integer = 0 To (numCajas.Value) - 1
+                    numLoteTmp = num_lotes
+                    For i As Integer = 0 To (num_cajas) - 1
                         numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
                         If (jerxLote * lotxCaja) > (jerxLote * ((numLoteTmp + empezarXlote) - 1)) Then lotxCaja = ((numLoteTmp + empezarXlote) - 1)
                         'restamos a la variable de lotes temporales la cantidad de lotes por caja. Esto se hace por si la ultima caja hay menos lotes que los reglamentarios.
@@ -1630,8 +1778,8 @@
                     'si la etiqueta es manual y numero de caja no es 1 se tiene que calcula el chip inicial de caja
                     If etiManual = True Then calcularChipInicial(1)
                     'asignamos la cantidad de lotes a una variable temporal.
-                    numLoteTmp = numLotes.Value
-                    For i As Integer = 0 To (numCajas.Value) - 1
+                    numLoteTmp = num_lotes
+                    For i As Integer = 0 To (num_cajas) - 1
                         numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
                         If (jerxLote * lotxCaja) > (jerxLote * ((numLoteTmp + empezarXlote) - 1)) Then lotxCaja = ((numLoteTmp + empezarXlote) - 1)
                         'restamos a la variable de lotes temporales la cantidad de lotes por caja. Esto se hace por si la ultima caja hay menos lotes que los reglamentarios.
@@ -1658,8 +1806,8 @@
                     'si la etiqueta es manual y numero de caja no es 1 se tiene que calcula el chip inicial de caja
                     If etiManual = True Then calcularChipInicial(1)
                     'asignamos la cantidad de lotes a una variable temporal.
-                    numLoteTmp = numLotes.Value
-                    For i As Integer = 0 To (numCajas.Value) - 1
+                    numLoteTmp = num_lotes
+                    For i As Integer = 0 To (num_cajas) - 1
                         numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
                         If (jerxLote * lotxCaja) > (jerxLote * ((numLoteTmp + empezarXlote) - 1)) Then lotxCaja = ((numLoteTmp + empezarXlote) - 1)
                         'restamos a la variable de lotes temporales la cantidad de lotes por caja. Esto se hace por si la ultima caja hay menos lotes que los reglamentarios.
@@ -1671,19 +1819,20 @@
                     Next
                     label.Close(BarTender.BtSaveOptions.btDoNotSaveChanges)
 
-                Case "Tipo 46"
+                Case "Tipo 46", "Tipo 47"
                     Dim numLoteTmp As Integer
                     fecCaducidad = "20" & numAñoCad.Value & "-" & numMesCad.Value.ToString("00")
                     'si la etiqueta es manual y numero de caja no es 1 se tiene que calcula el chip inicial de caja
                     If etiManual = True Then calcularChipInicial(1)
                     'asignamos la cantidad de lotes a una variable temporal.
-                    numLoteTmp = numLotes.Value
+                    numLoteTmp = num_lotes
                     'lotxCaja = numLotesPorCaja.Value
                     ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "CAJA", "ruta_caja")
-                    label = objbt.Formats.Open(ruta & "DMC10046.btw")
+                    If ListBox2.SelectedItem = "Tipo 46" Then label = objbt.Formats.Open(ruta & "DMC10046.btw")
+                    If ListBox2.SelectedItem = "Tipo 47" Then label = objbt.Formats.Open(ruta & "DMC10047.btw")
                     etImpConf = label.PrintSetup
                     etImpConf.Printer = cListImp.Text
-                    For i As Integer = 0 To (numCajas.Value) - 1
+                    For i As Integer = 0 To (num_cajas) - 1
                         numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
                         If (jerxLote * lotxCaja) > (jerxLote * ((numLoteTmp + empezarXlote) - 1)) Then lotxCaja = ((numLoteTmp + empezarXlote) - 1)
                         'restamos a la variable de lotes temporales la cantidad de lotes por caja. Esto se hace por si la ultima caja hay menos lotes que los reglamentarios.
@@ -1704,9 +1853,39 @@
         'Desbloqueamos el boton
         cmdImprimirCajas.Enabled = True
 
+    End Sub
+
+    Private Sub Imprimir_Palets_Nuevo(ByVal num_palets As Integer, ByVal muestra As Boolean)
+
+        Dim grabBBDDok As Boolean
+        If muestra Then
+            grabBBDDok = True
+        Else
+            If histGrabado = False Then
+                grabBBDDok = grabarHistorico("insertar")
+                histGrabado = True
+            Else
+                grabBBDDok = grabarHistorico("actualizar")
+            End If
+        End If
+        If grabBBDDok Then
+            ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "PALET", "ruta_palet")
+            label = objbt.Formats.Open(ruta & "PEGATINAS_PALLETS.btw")
+            etImpConf = label.PrintSetup
+            etImpConf.Printer = cListImp.Text
+            For i = 1 To num_palets
+                printEtiPalet_Nueva(txtNumPedido.Text, i, txtNombreCliente.Text)
+            Next
+            label.Close(BarTender.BtSaveOptions.btDoNotSaveChanges)
+        Else
+            MsgBox("No se han impreso las Etiquetas por un Error en la BBDD, Avise a Informatica.")
+            histGrabado = False
+        End If
 
     End Sub
-    Private Sub cmdImprimirPalets_Click(sender As Object, e As EventArgs) Handles cmdImprimirPalets.Click
+
+    Private Sub Imprimir_Palets(ByVal num_cajas As Integer, ByVal muestra As Boolean)
+
         Dim nbox, nboxfin, nboxtemp, paletinicial, i As Integer
         Dim aux_cajas As Integer = 0
         Dim cajas_palet As Integer = 1
@@ -1715,18 +1894,22 @@
         Dim qr As Boolean = False
         Dim auxFin, auxInicio As Integer
 
-
-        If histGrabado = False Then
-            grabBBDDok = grabarHistorico("insertar")
-            histGrabado = True
+        If muestra Then
+            grabBBDDok = True
         Else
-            grabBBDDok = grabarHistorico("actualizar")
+            If histGrabado = False Then
+                grabBBDDok = grabarHistorico("insertar")
+                histGrabado = True
+            Else
+                grabBBDDok = grabarHistorico("actualizar")
+            End If
         End If
+
         If grabBBDDok = True Then
             fecCaducidad = "EXP. 20" & numAñoCad.Value & "-" & numMesCad.Value.ToString("00")
             paletinicial = Integer.Parse(txtpalet.Value)
             nbox = Integer.Parse(empezarXCaja) '(txtCaja.Value)
-            nboxtemp = numCajas.Value
+            nboxtemp = num_cajas
             ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "PALET", "ruta_palet")
 
             If txtNombreCliente.Text = "TRU TEST BRASIL" Or txtNombreCliente.Text = "DATAMARS BRASIL TECNOLOGIA AGROPECUARIA LTDA" Then
@@ -1789,6 +1972,25 @@
             MsgBox("No se han impreso las Etiquetas por un Error en la BBDD, Avise a Informatica.")
             histGrabado = False
         End If
+
+    End Sub
+
+    Private Sub cmdImprimirLotes_Click(sender As Object, e As EventArgs) Handles cmdImprimirLotes.Click
+
+        Imprimir_Lotes(numLotes.Value, False)
+
+    End Sub
+
+    Private Sub cmdImprimirCajas_Click(sender As Object, e As EventArgs) Handles cmdImprimirCajas.Click
+
+        Imprimir_Cajas(numLotes.Value, numCajas.Value, False)
+
+    End Sub
+    Private Sub cmdImprimirPalets_Click(sender As Object, e As EventArgs) Handles cmdImprimirPalets.Click
+
+        'Imprimir_Palets(numCajas.Value, False)
+        Imprimir_Palets_Nuevo(numPalets.Value, False)
+
     End Sub
 
 
@@ -2198,6 +2400,25 @@
     End Sub
 
     Private Sub txtCodPedido_TextChanged(sender As Object, e As EventArgs) Handles txtCodPedido.TextChanged
+
+    End Sub
+
+    Private Sub btn_MuestraLotes_Click(sender As Object, e As EventArgs) Handles btn_MuestraLotes.Click
+
+        Imprimir_Lotes(1, True)
+
+    End Sub
+
+    Private Sub btn_Muestra_Cajas_Click(sender As Object, e As EventArgs) Handles btn_Muestra_Cajas.Click
+
+        Imprimir_Cajas(1, 1, True)
+
+    End Sub
+
+    Private Sub btn_Muestra_Palets_Click(sender As Object, e As EventArgs) Handles btn_Muestra_Palets.Click
+
+        'Imprimir_Palets(1, True)
+        Imprimir_Palets_Nuevo(1, True)
 
     End Sub
 

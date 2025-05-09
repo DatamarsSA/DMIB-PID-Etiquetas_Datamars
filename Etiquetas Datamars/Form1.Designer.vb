@@ -108,6 +108,9 @@ Partial Class Form1
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.picEtiquetaCaja = New System.Windows.Forms.PictureBox()
         Me.picEtiquetaLote = New System.Windows.Forms.PictureBox()
+        Me.btn_MuestraLotes = New System.Windows.Forms.Button()
+        Me.btn_Muestra_Cajas = New System.Windows.Forms.Button()
+        Me.btn_Muestra_Palets = New System.Windows.Forms.Button()
         CType(Me.txtSemana, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtAño, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtCaja, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -138,7 +141,7 @@ Partial Class Form1
         Me.cmdImprimirLotes.FlatAppearance.BorderColor = System.Drawing.Color.Black
         Me.cmdImprimirLotes.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdImprimirLotes.ForeColor = System.Drawing.Color.Maroon
-        Me.cmdImprimirLotes.Location = New System.Drawing.Point(311, 497)
+        Me.cmdImprimirLotes.Location = New System.Drawing.Point(311, 460)
         Me.cmdImprimirLotes.Name = "cmdImprimirLotes"
         Me.cmdImprimirLotes.Size = New System.Drawing.Size(200, 36)
         Me.cmdImprimirLotes.TabIndex = 21
@@ -169,7 +172,7 @@ Partial Class Form1
         '
         Me.cmdImprimirCajas.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdImprimirCajas.ForeColor = System.Drawing.Color.Maroon
-        Me.cmdImprimirCajas.Location = New System.Drawing.Point(536, 496)
+        Me.cmdImprimirCajas.Location = New System.Drawing.Point(536, 460)
         Me.cmdImprimirCajas.Name = "cmdImprimirCajas"
         Me.cmdImprimirCajas.Size = New System.Drawing.Size(200, 36)
         Me.cmdImprimirCajas.TabIndex = 22
@@ -315,7 +318,7 @@ Partial Class Form1
         '
         Me.ListBox1.Enabled = False
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Items.AddRange(New Object() {"Ninguna", "Std", "tipo3", "tipo5", "tipo7", "tipo9", "tipo10", "tipo12", "tipo13", "tipo14", "tipo15", "tipo16", "tipo18", "tipo19", "tipo22", "tipo24", "tipo25", "report35", "report37", "report39", "report43", "TVAL", "TVALO", "FL1100", "FL1103", "Tipo 25 (DML1025)", "tipo17", "Tipo 26", "tipo27", "Tipo28", "tipo29", "tipo30", "tipo31", "tipo32", "tipo33", "TIPO 41", "Tipo 42", "Tipo 43", "Tipo44", "Tipo45"})
+        Me.ListBox1.Items.AddRange(New Object() {"Ninguna", "Std", "tipo3", "tipo5", "tipo7", "tipo9", "tipo10", "tipo12", "tipo13", "tipo14", "tipo15", "tipo16", "tipo18", "tipo19", "tipo22", "tipo24", "tipo25", "report35", "report37", "report39", "report43", "TVAL", "TVALO", "FL1100", "FL1103", "Tipo 25 (DML1025)", "tipo17", "Tipo 26", "tipo27", "Tipo28", "tipo29", "tipo30", "tipo31", "tipo32", "tipo33", "TIPO 41", "Tipo 42", "Tipo 43", "Tipo44", "Tipo45", "Tipo 46", "Tipo 47", "Tipo48"})
         Me.ListBox1.Location = New System.Drawing.Point(349, 556)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.ScrollAlwaysVisible = True
@@ -346,7 +349,7 @@ Partial Class Form1
         '
         Me.ListBox2.Enabled = False
         Me.ListBox2.FormattingEnabled = True
-        Me.ListBox2.Items.AddRange(New Object() {"Ninguna", "Std", "tipo1", "tipo3", "tipo4", "tipo5", "tipo6", "tipo7", "tipo9", "tipo10", "tipo11", "tipo12", "tipo13", "tipo14", "tipo15", "tipo16", "tipo17", "tipo18", "tipo19", "tipo20", "tipo21", "tipo22", "tipo23", "tipo24", "tipo25", "report36", "report38", "report40", "report42", "report44", "report45", "TVAC", "TVACO", "Tipoar", "FC10092", "FC10093", "Tipo 25 (DMC10025)", "tipo27", "Tipo28", "tipo29", "tipo30", "tipo31", "tipo32", "tipo33", "TIPO 41", "Tipo 42", "Tipo 43", "Tipo44", "Tipo45", "Tipo 46"})
+        Me.ListBox2.Items.AddRange(New Object() {"Ninguna", "Std", "tipo1", "tipo3", "tipo4", "tipo5", "tipo6", "tipo7", "tipo9", "tipo10", "tipo11", "tipo12", "tipo13", "tipo14", "tipo15", "tipo16", "tipo17", "tipo18", "tipo19", "tipo20", "tipo21", "tipo22", "tipo23", "tipo24", "tipo25", "report36", "report38", "report40", "report42", "report44", "report45", "TVAC", "TVACO", "Tipoar", "FC10092", "FC10093", "Tipo 25 (DMC10025)", "tipo27", "Tipo28", "tipo29", "tipo30", "tipo31", "tipo32", "tipo33", "TIPO 41", "Tipo 42", "Tipo 43", "Tipo44", "Tipo45", "Tipo 46", "Tipo 47", "Tipo48"})
         Me.ListBox2.Location = New System.Drawing.Point(577, 556)
         Me.ListBox2.Name = "ListBox2"
         Me.ListBox2.ScrollAlwaysVisible = True
@@ -597,7 +600,7 @@ Partial Class Form1
         '
         Me.cmdImprimirPalets.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdImprimirPalets.ForeColor = System.Drawing.Color.Maroon
-        Me.cmdImprimirPalets.Location = New System.Drawing.Point(758, 496)
+        Me.cmdImprimirPalets.Location = New System.Drawing.Point(758, 460)
         Me.cmdImprimirPalets.Name = "cmdImprimirPalets"
         Me.cmdImprimirPalets.Size = New System.Drawing.Size(200, 36)
         Me.cmdImprimirPalets.TabIndex = 57
@@ -994,12 +997,57 @@ Partial Class Form1
         Me.picEtiquetaLote.TabIndex = 43
         Me.picEtiquetaLote.TabStop = False
         '
+        'btn_MuestraLotes
+        '
+        Me.btn_MuestraLotes.BackColor = System.Drawing.Color.LightYellow
+        Me.btn_MuestraLotes.Enabled = False
+        Me.btn_MuestraLotes.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.btn_MuestraLotes.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_MuestraLotes.ForeColor = System.Drawing.Color.Black
+        Me.btn_MuestraLotes.Location = New System.Drawing.Point(311, 502)
+        Me.btn_MuestraLotes.Name = "btn_MuestraLotes"
+        Me.btn_MuestraLotes.Size = New System.Drawing.Size(200, 36)
+        Me.btn_MuestraLotes.TabIndex = 84
+        Me.btn_MuestraLotes.Text = "Imprimir Muestra Lotes"
+        Me.btn_MuestraLotes.UseVisualStyleBackColor = False
+        '
+        'btn_Muestra_Cajas
+        '
+        Me.btn_Muestra_Cajas.BackColor = System.Drawing.Color.LightYellow
+        Me.btn_Muestra_Cajas.Enabled = False
+        Me.btn_Muestra_Cajas.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.btn_Muestra_Cajas.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_Muestra_Cajas.ForeColor = System.Drawing.Color.Black
+        Me.btn_Muestra_Cajas.Location = New System.Drawing.Point(536, 502)
+        Me.btn_Muestra_Cajas.Name = "btn_Muestra_Cajas"
+        Me.btn_Muestra_Cajas.Size = New System.Drawing.Size(200, 36)
+        Me.btn_Muestra_Cajas.TabIndex = 85
+        Me.btn_Muestra_Cajas.Text = "Imprimir Muestra Cajas"
+        Me.btn_Muestra_Cajas.UseVisualStyleBackColor = False
+        '
+        'btn_Muestra_Palets
+        '
+        Me.btn_Muestra_Palets.BackColor = System.Drawing.Color.LightYellow
+        Me.btn_Muestra_Palets.Enabled = False
+        Me.btn_Muestra_Palets.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.btn_Muestra_Palets.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_Muestra_Palets.ForeColor = System.Drawing.Color.Black
+        Me.btn_Muestra_Palets.Location = New System.Drawing.Point(758, 502)
+        Me.btn_Muestra_Palets.Name = "btn_Muestra_Palets"
+        Me.btn_Muestra_Palets.Size = New System.Drawing.Size(200, 36)
+        Me.btn_Muestra_Palets.TabIndex = 86
+        Me.btn_Muestra_Palets.Text = "Imprimir Muestra Palets"
+        Me.btn_Muestra_Palets.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1006, 698)
+        Me.Controls.Add(Me.btn_Muestra_Palets)
+        Me.Controls.Add(Me.btn_Muestra_Cajas)
+        Me.Controls.Add(Me.btn_MuestraLotes)
         Me.Controls.Add(Me.labelJapon)
         Me.Controls.Add(Me.txtJaponBatch)
         Me.Controls.Add(Me.Label37)
@@ -1077,7 +1125,7 @@ Partial Class Form1
         Me.Controls.Add(Me.cmdImprimirLotes)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
-        Me.Text = "Etiquetas Datamars"
+        Me.Text = "ETIQUETAS DATAMARS"
         CType(Me.txtSemana, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtAño, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtCaja, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1191,4 +1239,7 @@ Partial Class Form1
     Friend WithEvents Label37 As Label
     Friend WithEvents txtJaponBatch As TextBox
     Friend WithEvents labelJapon As Label
+    Friend WithEvents btn_MuestraLotes As Button
+    Friend WithEvents btn_Muestra_Cajas As Button
+    Friend WithEvents btn_Muestra_Palets As Button
 End Class
