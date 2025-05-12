@@ -238,6 +238,10 @@
                     viewEtiqueta(0) = ruta & "DMC10047.jpg"
                     viewEtiqueta(1) = anchoEtiq
                     viewEtiqueta(2) = altoEtiq
+                Case "Tipo48"
+                    viewEtiqueta(0) = ruta & "DMC10022.jpg"
+                    viewEtiqueta(1) = anchoEtiq
+                    viewEtiqueta(2) = altoEtiq
                 Case Else
                     viewEtiqueta(0) = ruta & "etiqueta_gen.jpg"
                     viewEtiqueta(1) = anchoEtiq

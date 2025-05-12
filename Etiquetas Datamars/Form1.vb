@@ -532,88 +532,69 @@
                     Next
                     'cerramos para liberar espacio
                     label.Close(BarTender.BtSaveOptions.btDoNotSaveChanges)
-                Case "Tipo48"
-                    fecCaducidad = "EXP. 20" & numAñoCad.Value & "-" & numMesCad.Value.ToString("00")
-                    contador = 1
-                    'abrimos la etiqueta bartender
-                    ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "LOTE", "ruta_lote")
-                    'Creamos objeto Etiqueta para el BarTender
-                    label = objbt.Formats.Open(ruta & "DML1026.btw")
-                    etImpConf = label.PrintSetup
-                    etImpConf.Printer = cListImp.Text
+                Case "Tipo 26B", "Tipo48"
+                    'Se imprimen Primero las etiquetas del Tipo 9
+                    If reImprimir = True And etiManual = True Then
+                        respuesta = MsgBox("Tiene 2 tipos de Etiquetas. Estas son las Etiquetas 60mmX47mm. ¿Necesitas Imprimirlas?", vbYesNo, "REIMPRESION DE ETIQUETAS")
+                    Else
+                        respuesta = 6
+                    End If
+                    If respuesta = 6 Then
+                        fecCaducidad = "EXP. 20" & numAñoCad.Value & "-" & numMesCad.Value.ToString("00")
+                        contador = 1
+                        'abrimos la etiqueta bartender
+                        ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "LOTE", "ruta_lote")
+                        'Creamos objeto Etiqueta para el BarTender
+                        label = objbt.Formats.Open(ruta & "DML1026.btw")
+                        etImpConf = label.PrintSetup
+                        etImpConf.Printer = cListImp.Text
 
-                    For i = empezarXlote To (num_lotes + l) - 1
-                        numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
-                        printLoteStandart()
-                        loteinicial += 1
-                        If loteinicial = (lotxCaja + 1) Then
-                            loteinicial = 1
-                            auxcaja += 1
+                        For i = empezarXlote To (num_lotes + l) - 1
+                            numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
+                            printLoteStandart()
+                            loteinicial += 1
+                            If loteinicial = (lotxCaja + 1) Then
+                                loteinicial = 1
+                                auxcaja += 1
+                            End If
+                            'introducimos una espera para que la impresora reciba la etiqueta y no se alternen.
+                            espera(0.2)
+                        Next
+                    End If
+                    If reImprimir = True And etiManual = True Then
+                        respuesta = MsgBox("Se van a imprimir las segundas Etiquetas de este Pedido de 60mmX23mm.¿Necesita Reimprimirlas?", vbYesNo, "REIMPRESION DE ETIQUETAS")
+                    Else
+                        respuesta = 6
+
+                    End If
+                    If respuesta = 6 Then
+                        ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "LOTE", "ruta_lote")
+                        MsgBox("Se van a imprimir las segundas Etiquetas de este Pedido de 60mmX23mm, cambie el rollo de etiquetas")
+                        If ListBox1.SelectedItem = "Tipo 26B" Then
+                            label = objbt.Formats.Open(ruta & "DML1026B.btw")
+                        ElseIf ListBox1.SelectedItem = "Tipo48" Then
+                            label = objbt.Formats.Open(ruta & "DML_CCA.btw")
                         End If
-                        'introducimos una espera para que la impresora reciba la etiqueta y no se alternen.
-                        espera(0.2)
-                    Next
-                    MsgBox("Se va a imprimir el otro tipo de pegatina, cambie el rollo de etiquetas")
-                    label = objbt.Formats.Open(ruta & "DML_CCA.btw")
-                    fecCaducidad = "" & numMesCad.Value.ToString("00") & "/20" & numAñoCad.Value.ToString("00")
-                    etImpConf = label.PrintSetup
-                    etImpConf.Printer = cListImp.Text
 
-                    For i = empezarXlote To (num_lotes + l) - 1
-                        numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
-                        printTipo26B()
-                        loteinicial += 1
-                        If loteinicial = (lotxCaja + 1) Then
-                            loteinicial = 1
-                            auxcaja += 1
-                        End If
-                        'introducimos una espera para que la impresora reciba la etiqueta y no se alternen.
-                        espera(0.2)
-                    Next
+                        fecCaducidad = "" & numMesCad.Value.ToString("00") & "/20" & numAñoCad.Value.ToString("00")
+                        etImpConf = label.PrintSetup
+                        etImpConf.Printer = cListImp.Text
 
-                    'cerramos para liberar espacio
-                    label.Close(BarTender.BtSaveOptions.btDoNotSaveChanges)
-                Case "Tipo 26B"
-                    fecCaducidad = "EXP. 20" & numAñoCad.Value & "-" & numMesCad.Value.ToString("00")
-                    contador = 1
-                    'abrimos la etiqueta bartender
-                    ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "LOTE", "ruta_lote")
-                    'Creamos objeto Etiqueta para el BarTender
-                    label = objbt.Formats.Open(ruta & "DML1026.btw")
-                    etImpConf = label.PrintSetup
-                    etImpConf.Printer = cListImp.Text
+                        For i = empezarXlote To (num_lotes + l) - 1
+                            numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
+                            printTipo26B()
+                            loteinicial += 1
+                            If loteinicial = (lotxCaja + 1) Then
+                                loteinicial = 1
+                                auxcaja += 1
+                            End If
+                            'introducimos una espera para que la impresora reciba la etiqueta y no se alternen.
+                            espera(0.2)
+                        Next
 
-                    For i = empezarXlote To (num_lotes + l) - 1
-                        numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
-                        printLoteStandart()
-                        loteinicial += 1
-                        If loteinicial = (lotxCaja + 1) Then
-                            loteinicial = 1
-                            auxcaja += 1
-                        End If
-                        'introducimos una espera para que la impresora reciba la etiqueta y no se alternen.
-                        espera(0.2)
-                    Next
-                    MsgBox("Se va a imprimir el otro tipo de pegatina, cambie el rollo de etiquetas")
-                    label = objbt.Formats.Open(ruta & "DML1026B.btw")
-                    fecCaducidad = "" & numMesCad.Value.ToString("00") & "/20" & numAñoCad.Value.ToString("00")
-                    etImpConf = label.PrintSetup
-                    etImpConf.Printer = cListImp.Text
-
-                    For i = empezarXlote To (num_lotes + l) - 1
-                        numLote = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxcaja.ToString("0000") & "/" & loteinicial.ToString("00")
-                        printTipo26B()
-                        loteinicial += 1
-                        If loteinicial = (lotxCaja + 1) Then
-                            loteinicial = 1
-                            auxcaja += 1
-                        End If
-                        'introducimos una espera para que la impresora reciba la etiqueta y no se alternen.
-                        espera(0.2)
-                    Next
-
-                    'cerramos para liberar espacio
-                    label.Close(BarTender.BtSaveOptions.btDoNotSaveChanges)
+                        'cerramos para liberar espacio
+                        label.Close(BarTender.BtSaveOptions.btDoNotSaveChanges)
+                    End If
                 Case "tipo3"
                     fecCaducidad = "01/" & numMesCad.Value.ToString("00") & "/" & "20" & numAñoCad.Value
                     ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "LOTE", "ruta_lote")
@@ -1423,13 +1404,13 @@
                     Dim respuesta As Integer
                     'Se imprimen Primero las etiquetas del Tipo 9
                     If reImprimir = True And etiManual = True Then
-                        respuesta = MsgBox("Tiene 2 tipos de Etiquetas. Estas son las Etiquetas 80mmX80mm. ¿Necesitas Imprimirlas?", vbYesNo, "REIMPRESION DE ETIQUETAS")
+                        respuesta = MsgBox("Tiene 2 tipos de Etiquetas. Estas son las Etiquetas 60mmX47mm. ¿Necesitas Imprimirlas?", vbYesNo, "REIMPRESION DE ETIQUETAS")
                     Else
                         respuesta = 6
 
                     End If
                     If respuesta = 6 Then
-                        MsgBox("Tiene 2 tipos de Etiquetas. Estas son las Etiquetas 80mmX80mm, Cambie las etiquetas en la impresora Referencia BOM:600 0200-053", MsgBoxStyle.Information)
+                        MsgBox("Tiene 2 tipos de Etiquetas. Estas son las Etiquetas 60mmX47mm, Cambie las etiquetas en la impresora Referencia BOM:600 0200-053", MsgBoxStyle.Information)
                         fecCaducidad = "EXP. 20" & (numAñoCad.Value) & "-" & numMesCad.Value.ToString("00") 'quitar el 2 es temporal
                         ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "CAJA", "ruta_caja")
                         label = objbt.Formats.Open(ruta & "DMC10022.btw")
@@ -1437,7 +1418,7 @@
                         etImpConf.Printer = cListImp.Text
                         For i As Integer = 0 To (num_cajas) - 1
                             numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
-                            printCajaTipo14()
+                            printcajaTipo14()
                             auxCaja += 1
                             'introducimos una espera para que la impresora reciba la etiqueta y no se alternen.
                             espera(0.2)
@@ -1445,26 +1426,23 @@
                         label.Close(BarTender.BtSaveOptions.btDoNotSaveChanges)
                     End If
 
+                    'Se imprimen Primero las etiquetas del Tipo 9
                     If reImprimir = True And etiManual = True Then
-                        respuesta = MsgBox("Se van a imprimir las segundas Etiquetas de este Pedido de 60mmX47mm.¿Necesita Reimprimirlas?", vbYesNo, "REIMPRESION DE ETIQUETAS")
+                        respuesta = MsgBox("Se van a imprimir las segundas Etiquetas de este Pedido de 80mmX80mm.¿Necesita Reimprimirlas?", vbYesNo, "REIMPRESION DE ETIQUETAS")
                     Else
                         respuesta = 6
+
                     End If
                     If respuesta = 6 Then
-                        'se tiene que realizar el cambio de las etiquetas
-                        MsgBox("!Se van a Imprimir las Etiquetas de 60x47mm¡, Cambie las etiquetas en la impresora Referencia BOM:600 0200-050", MsgBoxStyle.Information)
-                        mostrarEtiqCaja("Std")
+                        MsgBox("!Se van a Imprimir las Etiquetas de 80x80mm¡, Cambie las etiquetas en la impresora Referencia BOM:600 0200-050", MsgBoxStyle.Information)
+                        fecCaducidad = "20" & numAñoCad.Value & "-" & numMesCad.Value.ToString("00")
                         ruta = iniaccess.INI_Read(My.Application.Info.DirectoryPath & "\settings.ini", "CAJA", "ruta_caja")
-                        label = objbt.Formats.Open(ruta & "DMC_standart.btw")
+                        label = objbt.Formats.Open(ruta & "DMC10012.btw")
                         etImpConf = label.PrintSetup
                         etImpConf.Printer = cListImp.Text
-                        'ponemos el contador de cajas al valor de cajas iniciales, para que no sume. si no que imprima desde el valor inicial.
-                        auxCaja = Integer.Parse(empezarXCaja) '(txtCaja.Value)
                         For i As Integer = 0 To (num_cajas) - 1
                             numCaja = Integer.Parse(txtSemana.Text).ToString("00") & txtAño.Text & "_9" & auxCaja.ToString("0000")
-                            mostrarEtiqCaja("Std")
-                            label = objbt.Formats.Open(ruta & "DMC_standart.btw")
-                            printCajaStandart()
+                            printCajaTipo12()
                             auxCaja += 1
                             'introducimos una espera para que la impresora reciba la etiqueta y no se alternen.
                             espera(0.2)
